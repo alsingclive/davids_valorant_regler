@@ -1,0 +1,10 @@
+{% layout '/templates/layout/default.liquid' %}
+
+{% block content %}
+
+  {% for element in data.elements %}
+
+    {% render element.template, data: element.data, id: element.id %}
+  {% endfor %}
+
+{% endblock %}

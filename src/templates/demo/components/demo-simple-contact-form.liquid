@@ -1,0 +1,49 @@
+<section {% if id !=blank %} id="{{ id }}" {% endif %} class="w-full {% if data.gray %} bg-gray-100" {% endif %}">
+  <div class="reveal fade-bottom max-w-screen-2xl mx-auto p-12">
+    <div class="flex flex-row">
+      <div class="flex flex-col">
+        <h2 class="text-5xl font-extrabold font-serif my-4">Bliv kontaktet</h2>
+        <p class="text-manchet center-block text-lg mb-4 text-zinc-600">
+          Lad os ringe eller skrive til dig.
+        </p>
+      </div>
+    </div>
+    <form data-simple-contact-form="true">
+      <div data-loader="true" class="flex justify-center items-center p-6 hidden">
+        <div class="animate-spin inline-block w-8 h-8 border-4 rounded-full border-primary" style="vertical-align: -0.125em;border-width: 0.25em;border-right-color: transparent;"
+          role="status">
+          <span class="hidden">Loading...</span>
+        </div>
+      </div>
+      <div data-done="true" class="flex justify-center items-center p-6 hidden">
+        <p class="text-lg">Tak for din henvendelse, vi vender tilbage snarest!</p>
+      </div>
+      <div data-form-inputs="true">
+        <p data-error="true" class="text-red-500 hidden">Der skete en fejl, prøv igen!</p>
+        <input data-form-type="name" class="w-full my-2 p-4 bg-opacity-5 bg-black border-none rounded-md" required type="text" placeholder="Dit navn *" required data-val="true"
+          data-val-required="The Name field is required." name="Name" value="">
+        <span class="text-red-500 field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+
+        <input data-form-type="mail-or-phone" type="text" class="w-full my-2 p-4 text-base bg-opacity-5 bg-black border-none rounded-md"
+          aria-describedby="Indtast mail eller telefonnummer*" required data-val="true" data-val-required="Indtast venligst enten mail eller telefonnummer."
+          placeholder="Din mail eller dit telefonnr. *" name="PhoneNumberOrEmail" value="">
+        <span class="text-red-500 field-validation-valid" data-valmsg-for="PhoneNumberOrEmail" data-valmsg-replace="true"></span>
+
+        <button type="submit" class="my-2 flex flex-row justify-center w-48 py-3 rounded-full transition-colors bg-primary-dark hover:bg-primary text-white">Bliv
+          kontaktet <i class="material-symbols-outlined ml-2" aria-hidden="true" role="img" data-icon="send"></i></button>
+
+        <p class="mt-6 text-sm text-zinc-600">
+          Dette websted er beskyttet af reCAPTCHA, og Googles <a href="https://policies.google.com/privacy"
+            class="text-green-dark/80 border-dotted border-b border-green-dark/80">privatlivspolitik</a> og
+          <a href="https://policies.google.com/terms" class="text-green-dark/80 border-dotted border-b border-green-dark/80">servicevilkår</a> gælder.
+        </p>
+      </div>
+    </form>
+  </div>
+</section>
+
+{% # script "/liquid/components/inputs/simple_contact_form.liquid.js", location: "footer", defer %}
+{% script
+"https://www.google.com/recaptcha/api.js?render=6Ld3w74ZAAAAAKimt-nTJ7fWJzU-aS69O2Onhipo",
+location: "footer",
+defer %}

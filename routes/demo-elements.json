@@ -1,0 +1,495 @@
+{
+  "templateName": "/templates/pages/designer.liquid",
+  "routeTemplate": "/demo",
+  "active": true,
+  "data": {
+    "title": "Demo elements",
+    "elements": [
+      {
+        "template": "/templates/demo/components/demo-hero.liquid",
+        "data": {
+          "scroll_ref": "#",
+          "links": [
+            {
+              "text": "Hero knap 1",
+              "href": "#",
+              "icon": "favorite"
+            },
+            {
+              "text": "Hero knap 2",
+              "href": "#",
+              "icon": "arrow_forward"
+            }
+          ],
+          "hero_image": "/assets/bg/bg1.jpg",
+          "title": "Hero titel",
+          "subtitle": "Hero sub titel",
+          "text": "Hero text. Hero kan udvides med bl.a. flere knapper"
+        }
+      },
+      {
+        "template": "/templates/demo/components/demo-hero-half.liquid",
+        "data": {
+          "scroll_ref": "#",
+          "links": [
+            {
+              "text": "Hero knap 1",
+              "href": "#",
+              "icon": "favorite"
+            },
+            {
+              "text": "Hero knap 2",
+              "href": "#",
+              "icon": "arrow_forward"
+            }
+          ],
+          "hero_image": "/assets/bg/bg1.jpg",
+          "title": "Hero titel",
+          "subtitle": "Hero sub titel",
+          "text": "Hero text. Hero kan udvides med bl.a. flere knapper"
+        }
+      },
+      {
+        "template": "/templates/demo/components/demo-text-centered.liquid",
+        "data": {
+          "title": "Text Centered Title",
+          "subtitle": "Sub title",
+          "text": [
+            "Text arrays",
+            "Mulighed for flere linjer",
+            "Og link."
+          ],
+          "links": [
+            {
+              "text": "Link",
+              "icon": "favorite",
+              "href": "#"
+            }
+          ]
+        },
+        "id": "text_centered"
+      },
+      {
+        "template": "/templates/demo/components/demo-columns.liquid",
+        "data": {
+          "title": "Text Columns Title",
+          "subtitle": "Allow X columns",
+          "gray": true,
+          "columns": [
+            {
+              "title": "Title 1",
+              "text": "Text 1",
+              "icon": "favorite",
+              "link": {
+                "href": "#",
+                "text": "Button 1",
+                "icon": "favorite"
+              }
+            },
+            {
+              "title": "Title 1",
+              "text": "Text 1"
+            },
+            {
+              "title": "Title 1",
+              "text": "Text 1",
+              "icon": "favorite"
+            }
+          ]
+        },
+        "id": "text_columns"
+      },
+      {
+        "template": "/templates/demo/components/demo-grid-list-cards.liquid",
+        "data": {
+          "title": "Grid List Cards",
+          "subtitle": "Text",
+          "hideborder": true,
+          "boxes": [
+            {
+              "title": "Title",
+              "text": "Text"
+            },
+            {
+              "title": "Title",
+              "text": "Text"
+            },
+            {
+              "title": "Title",
+              "text": "Text"
+            },
+            {
+              "title": "Title",
+              "text": "Text"
+            }
+          ]
+        },
+        "id": "green"
+      },
+      {
+        "template": "/templates/demo/components/demo-columns-image-right.liquid",
+        "data": {
+          "image": "/assets/bg/bg1.jpg",
+          "title": "Columns Image Right Title",
+          "subtitle": "Sub title.",
+          "columns": [
+            {
+              "subtitle": "Subtitle",
+              "title": "Column title",
+              "text": "Column text"
+            },
+            {
+              "title": "Column title",
+              "text": [
+                "Text line 1",
+                "Text line 2"
+              ]
+            }
+          ]
+        },
+        "id": "columns_image_right"
+      },
+      {
+        "template": "/templates/demo/components/demo-columns-image-right.liquid",
+        "data": {
+          "image": "/assets/bg/bg1.jpg",
+          "image_first": true,
+          "title": "Columns Image Left Title",
+          "subtitle": "Sub title.",
+          "columns": [
+            {
+              "subtitle": "Subtitle",
+              "title": "Column title",
+              "text": "Column text"
+            },
+            {
+              "title": "Column title",
+              "text": [
+                "Text line 1",
+                "Text line 2"
+              ]
+            }
+          ]
+        },
+        "id": "columns_image_left"
+      },
+      {
+        "template": "/templates/demo/components/demo-columns-left-aligned.liquid",
+        "data": {
+          "title": "Columns Left Aligned Title",
+          "subtitle": "Some sub title.",
+          "columns": [
+            {
+              "title": "Column A",
+              "text": "Text and stuff"
+            },
+            {
+              "title": "Column B",
+              "text": [
+                "More text",
+                "More lines"
+              ]
+            },
+            {
+              "title": "Column C",
+              "text": [
+                "More text",
+                "More lines"
+              ]
+            }
+          ]
+        },
+        "id": "columns_left_aligned"
+      },
+      {
+        "template": "/templates/demo/components/demo-simple-contact-form.liquid",
+        "data": {
+          "gray": true
+        },
+        "id": "contact_simple"
+      },
+      {
+        "template": "/templates/demo/components/demo-large-links.liquid",
+        "data": {
+          "title": "Title",
+          "subtitle": "Sub title",
+          "links": [
+            {
+              "title": "Link A",
+              "text": "Text info.",
+              "href": "#",
+              "chips": [
+                "Demo"
+              ]
+            },
+            {
+              "title": "Link B",
+              "text": "Text info.",
+              "href": "#",
+              "chips": [
+                "Stuff",
+                "Stuff 2"
+              ]
+            }
+          ],
+          "text": "Demo text"
+        },
+        "id": "large_links"
+      },
+      {
+        "template": "/templates/demo/components/demo-column-person.liquid",
+        "data": {
+          "title": "Title",
+          "text": "Hello world",
+          "person_first": true,
+          "button": {
+            "text": "Button 1",
+            "href": "#",
+            "icon": "favorite"
+          },
+          "character": {
+            "image": "/assets/bg/bg1.jpg",
+            "title": "Awesome purrson",
+            "subtitle": "President cat",
+            "text": "More about me you should know.",
+            "links": [
+              {
+                "text": "Link 1",
+                "href": "#",
+                "title": "Woah"
+              },
+              {
+                "text": "Link 2",
+                "href": "#",
+                "title": "Woop"
+              }
+            ],
+            "buttons": [
+              {
+                "text": "Link 1",
+                "href": "#",
+                "title": "Woah",
+                "icon": "favorite"
+              },
+              {
+                "text": "Link 2",
+                "href": "#",
+                "title": "Woah",
+                "icon": "favorite"
+              }
+            ]
+          }
+        },
+        "id": "column_person"
+      },
+      {
+        "template": "/templates/demo/components/demo-simple-person.liquid",
+        "data": {
+          "title": "Title",
+          "subtitle": "Sub title!",
+          "character": {
+            "image": "/assets/bg/bg1.jpg",
+            "title": "Awesome purrson",
+            "subtitle": "President cat",
+            "text": "More about me you should know.",
+            "links": [
+              {
+                "text": "Link 1",
+                "href": "#",
+                "title": "Woah"
+              },
+              {
+                "text": "Link 2",
+                "href": "#",
+                "title": "Woop"
+              }
+            ],
+            "buttons": [
+              {
+                "text": "Link 1",
+                "href": "#",
+                "title": "Woah",
+                "icon": "favorite"
+              },
+              {
+                "text": "Link 2",
+                "href": "#",
+                "title": "Woah",
+                "icon": "favorite"
+              }
+            ]
+          }
+        },
+        "id": "one_person"
+      },
+      {
+        "template": "/templates/demo/components/demo-image-cards.liquid",
+        "data": {
+          "title": "Image text grid title",
+          "hideborder": true,
+          "elements": [
+            {
+              "img": "/assets/bg/bg1.jpg",
+              "alt": "Alternativ billedebeskrivelse",
+              "title": "Title",
+              "text": [
+                "TEKST (NB. Billedstørrelser skal være homogene aka. samme dimensioner x og y)"
+              ],
+              "link": {
+                "href": "#",
+                "text": "Læs mere",
+                "title": "Klik her for at læse mere",
+                "icon": "arrow_forward"
+              }
+            },
+            {
+              "img": "/assets/bg/bg1.jpg",
+              "alt": "Alternativ billedebeskrivelse",
+              "title": "Title",
+              "text": [
+                "TEKST (NB. Billedstørrelser skal være homogene aka. samme dimensioner x og y)"
+              ],
+              "link": {
+                "href": "#",
+                "text": "Læs mere",
+                "title": "Klik her for at læse mere",
+                "icon": "arrow_forward"
+              }
+            },
+            {
+              "img": "/assets/bg/bg1.jpg",
+              "alt": "Alternativ billedebeskrivelse",
+              "title": "Title",
+              "text": [
+                "TEKST (NB. Billedstørrelser skal være homogene aka. samme dimensioner x og y)"
+              ],
+              "link": {
+                "href": "#",
+                "text": "Læs mere",
+                "title": "Klik her for at læse mere",
+                "icon": "arrow_forward"
+              }
+            },
+            {
+              "img": "/assets/bg/bg1.jpg",
+              "alt": "Alternativ billedebeskrivelse",
+              "title": "Title",
+              "text": [
+                "TEKST (NB. Billedstørrelser skal være homogene aka. samme dimensioner x og y)"
+              ],
+              "link": {
+                "href": "#",
+                "text": "Læs mere",
+                "title": "Klik her for at læse mere",
+                "icon": "arrow_forward"
+              }
+            }
+          ]
+        },
+        "id": "image_cards"
+      },
+      {
+        "template": "/templates/demo/components/demo-photo-cards.liquid",
+        "data": {
+          "title": "Photo text grid title",
+          "hideborder": true,
+          "elements": [
+            {
+              "img": "/assets/bg/bg1.jpg",
+              "title": "Title",
+              "text": [
+                "TEKST"
+              ],
+              "link": {
+                "href": "#"
+              }
+            },
+            {
+              "img": "/assets/bg/bg1.jpg",
+              "title": "Title",
+              "text": [
+                "TEKST"
+              ],
+              "link": {
+                "href": "#",
+                "text": "Læs mere",
+                "title": "Klik her for at læse mere"
+              }
+            },
+            {
+              "img": "/assets/bg/bg1.jpg",
+              "title": "Title",
+              "text": [
+                "TEKST",
+                "TEKST",
+                "TEKST"
+              ],
+              "link": {
+                "href": "#",
+                "text": "Læs mere",
+                "title": "Klik her for at læse mere",
+                "icon": "arrow_forward"
+              }
+            },
+            {
+              "img": "/assets/bg/bg1.jpg",
+              "title": "Title",
+              "text": [
+                "TEKST"
+              ],
+              "link": {
+                "href": "#",
+                "text": "Læs mere",
+                "title": "Klik her for at læse mere",
+                "icon": "arrow_forward"
+              }
+            }
+          ]
+        },
+        "id": "photo_cards"
+      },
+      {
+        "template": "/templates/demo/components/demo-quote-person.liquid",
+        "data": {
+          "gray": true,
+          "title": "Quote Title",
+          "quote_first": true,
+          "subtitle": "Subtitle",
+          "image": "/assets/bg/bg1.jpg",
+          "image_text": "Alt 1",
+          "quote": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis odio laoreet, tincidunt libero sed, egestas magna. Nam nibh diam, aliquet ac bibendum rhoncus, consectetur et urna. Phasellus neque est, ornare sed commodo id, imperdiet vitae ex. Aenean mattis metus et dolor consectetur, efficitur ultrices leo sodales.",
+            "(meow meow very good 10/10 recommendation would nap again 🐈)"
+          ],
+          "author": "- Mr. President cat"
+        },
+        "id": "quote_person"
+      },
+      {
+        "template": "/templates/demo/components/demo-footer.liquid",
+        "data": {
+          "image": "/assets/bg/bg1.jpg",
+          "title": "Footer title",
+          "subtitle": "Sub title",
+          "text": [
+            "Text line 1",
+            "Text line 2"
+          ],
+          "links": [
+            {
+              "text": "Button 1",
+              "icon": "arrow_forward",
+              "href": "#"
+            },
+            {
+              "text": "Button 2",
+              "icon": "arrow_forward",
+              "href": "#"
+            }
+          ]
+        },
+        "id": "footer"
+      }
+    ]
+  }
+}

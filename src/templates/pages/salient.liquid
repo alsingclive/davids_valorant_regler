@@ -1,0 +1,15 @@
+{% layout '/templates/layout/default.liquid' %}
+
+{% block content %}
+  <div class="bg-black" style="height: 10rem;"></div>
+  {% for element in data.elements %}
+    <div class="bg-black text-center text-white p-10 text-lg" style="width: 100%">
+      {{ element.template }}
+      <div style="font-size: .75rem; line-height: .75rem; margin-top: 1rem; overflow-wrap: anywhere;">
+        {{ element | json | raw }}
+      </div>
+    </div>
+
+    {% render element.template, data: element.data, id: element.id %}
+  {% endfor %}
+{% endblock %}

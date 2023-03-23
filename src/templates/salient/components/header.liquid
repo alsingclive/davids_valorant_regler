@@ -1,0 +1,68 @@
+{% block header %}
+  <header
+    class="py-10">
+    <div
+      class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav
+        class="relative z-50 flex justify-between">
+        <div
+          class="flex items-center md:gap-x-12">
+          <a
+            href="{{data.logo.href}}"
+            aria-label="Home">
+            <img
+              class="h-10 w-auto"
+              src="{{data.logo.src}}"
+              alt="logo">
+          </a>
+          <div
+            class="hidden md:flex md:gap-x-6">
+            {% for navlink in data.navigation.left %}
+              {% render '/templates/salient/components/navlink.liquid', navlink: navlink %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-x-5 md:gap-x-8">
+          <div
+            class="hidden md:block">
+            {% for navlink in data.navigation.right %}
+              {% render '/templates/salient/components/navlink.liquid', navlink: navlink %}
+            {% endfor %}
+          </div>
+          {% render '/templates/salient/components/button.liquid', button: data.navigation.button %}
+
+          {% comment %}
+
+          <MobileNavigation />
+
+
+          <div
+          class="-mr-1 md:hidden">
+          <button
+          class="relative z-10 flex h-8 w-8 items-center justify-center [&amp;:not(:focus-visible)]:focus:outline-none"
+          aria-label="Toggle Navigation"
+          type="button"
+          aria-expanded="false"
+          id="toggle-nav">
+          <svg aria-hidden="true" class="h-3.5 w-3.5 overflow-visible stroke-slate-700" fill="none" stroke-width="2" stroke-linecap="round">
+          <path d="M0 1H14M0 7H14M0 13H14" class="origin-center transition">
+
+          </path>
+          <path d="M2 2L12 12M12 2L2 12" class="origin-center transition scale-90 opacity-0">
+
+          </path>
+          </svg>
+          </button>
+          </div>
+
+          {% endcomment %}
+
+
+
+        </div>
+      </nav>
+    </div>
+  </header>
+{% endblock %}

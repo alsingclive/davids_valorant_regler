@@ -1,0 +1,28 @@
+{
+    "routeTemplate": "/{*}",
+    "active": true,
+    "data": {
+        "navigation": [
+            {
+                "title": "Front",
+                "href": "/"
+            },
+            {
+                "title": "Designer",
+                "href": "/designer"
+            },
+            {
+                "title": "Salient",
+                "href": "/salient"
+            },
+            {
+              "title": "Protocol",
+              "href": "/protocol"
+            },
+            {
+              "title": "Demo",
+              "href": "/demo"
+            }
+        ]
+    }
+}

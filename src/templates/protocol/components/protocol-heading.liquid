@@ -1,0 +1,46 @@
+{% case data.config.headingLevel %}
+
+{% when 1 %}
+{% assign headingClasses = "text-2xl md:text-4xl font-bold" %}
+{% assign heading = "h1" %}
+
+{% when 2 %}
+{% assign headingClasses = "text-xl md:text-2xl font-semibold" %}
+{% assign heading = "h2" %}
+
+{% when 3 %}
+{% assign headingClasses = "text-lg md:text-xl font-semibold" %}
+{% assign heading = "h3" %}
+
+{% when 4 %}
+{% assign headingClasses = "text-md font-medium" %}
+{% assign heading = "h4" %}
+
+{% else %} {% # default h2 %}
+{% assign heading = "h2" %}
+
+{% endcase %}
+
+{% case data.config.align %}
+
+{% when "left" %}
+{% assign textAlign = "text-left" %}
+
+{% when "center" %}
+{% assign textAlign = "text-center" %}
+
+{% when "right" %}
+{% assign textAlign = "text-right" %}
+
+{% endcase %}
+
+<span class="text-white {{ textAlign }}">
+  <{{ heading }} class="{{ headingClasses }}">{{ data.title }}</{{ heading }}>
+
+  {% if data.subtitle != blank %}
+
+  <p class="font-semibold mt-2">{{ data.subtitle }}</p>
+
+  {% endif %}
+
+</span>

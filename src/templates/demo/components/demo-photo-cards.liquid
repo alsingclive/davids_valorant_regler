@@ -1,0 +1,43 @@
+<div {% if id !=blank %}id="{{ id }}" {% endif %}
+  class="w-full max-w-screen-2xl mx-auto flex flex-col items-center my-12">
+
+  {% render "/templates/demo/components/demo-centered-header.liquid", data: data %}
+
+  <div class="w-full flex flex-col sm:flex-row flex-wrap">
+
+    {% for card in data.elements %}
+    <a class="reveal fade-bottom sm:w-1/2 lg:w-1/3 min-h-[500px] flex flex-col justify-end items-stretch bg-cover bg-top bg-no-repeat group bg-black/80"
+      style="background-image: url({{ card.img }});" href="{{ card.link.href }}" title="{{ card.link.title }}">
+
+      <span
+        class="p-5 transition-colors bg-black/30 text-white sm:text-white/10 group-hover:text-white group-hover:bg-black/80">
+        {% if card.title != blank %}
+        <span class="text-3xl text-white drop-shadow-md">{{ card.title }}</span>
+        {% endif %}
+
+        <div class="transition-all sm:max-h-0 overflow-hidden group-hover:max-h-96 duration-1000">
+          {% if card.text.first %}
+          {% for text in card.text %}
+          <p class="pt-4">{{ text }}</p>
+          {% endfor %}
+          {% else if card.text != blank %}
+          <p class="pt-4">{{ card.text }}</p>
+          {% endif %}
+
+          {% if card.link.text != blank || card.link.icon != blank %}
+          <p class="flex flex-row mt-auto pt-6 text-white group-hover:text-primary-light text-xl">
+            <span class="border-b border-dotted border-primary-light">{{card.link.text }}</span>
+            {% if card.link.icon != blank %}
+            <i class="material-symbols-outlined px-2 mt-1" aria-hidden="true" role="img"
+              data-icon="{{ card.link.icon }}"></i>
+            {% endif %}
+          </p>
+          {% endif %}
+        </div>
+      </span>
+    </a>
+
+    {% endfor %}
+
+  </div>
+</div>

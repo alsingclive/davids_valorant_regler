@@ -1,0 +1,303 @@
+{
+  "templateName": "/templates/pages/designer.liquid",
+  "routeTemplate": "/protocol",
+  "active": true,
+  "data": {
+    "title": "Protocol elements",
+    "elements": [
+      {
+        "template": "/templates/protocol/components/protocol-heading.liquid",
+        "data": {
+          "title": "A simple customizable heading",
+          "subtitle": "With an optional subheading",
+          "config": {
+            "headingLevel": 1,
+            "align": "center"
+          }
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-cta.liquid",
+        "data": {
+          "variant": "primary",
+          "text": "Primary button",
+          "href": "#",
+          "target": "",
+          "icon": "rocket_launch",
+          "config": {
+            "reverse": false,
+            "align": "center",
+            "span": true
+          }
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-cta.liquid",
+        "data": {
+          "variant": "secondary",
+          "text": "Secondary button",
+          "href": "#",
+          "target": "",
+          "icon": "shopping_cart",
+          "config": {
+            "reverse": false,
+            "align": "center",
+            "span": true
+          }
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-cta.liquid",
+        "data": {
+          "variant": "text",
+          "text": "Ghost button",
+          "href": "#",
+          "target": "",
+          "icon": "navigate_next",
+          "config": {
+            "reverse": false,
+            "align": "center",
+            "span": true
+          }
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-grid-layout.liquid",
+        "data": {
+          "heading": {
+            "title": "Grid layout with simple cards",
+            "config": {
+              "headingLevel": 2,
+              "align": "left"
+            }
+          },
+          "grid": {
+            "items": [
+              {
+                "title": "Card title",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "link": {
+                  "variant": "text",
+                  "text": "Read more",
+                  "href": "#",
+                  "target": "",
+                  "icon": "navigate_next",
+                  "config": {
+                    "reverse": false,
+                    "align": "left",
+                    "span": false
+                  }
+                }
+              },
+              {
+                "title": "Another card title",
+                "text": "Do people even read placeholder text? :thinking:",
+                "link": {
+                  "variant": "primary",
+                  "text": "Add to cart",
+                  "href": "#",
+                  "target": "",
+                  "icon": "add",
+                  "config": {
+                    "reverse": false,
+                    "align": "left",
+                    "span": false
+                  }
+                }
+              },
+              {
+                "title": "Links are optional",
+                "text": "Praesent gravida libero nec finibus mollis.",
+                "link": {
+                  "variant": "",
+                  "text": "",
+                  "href": "",
+                  "target": "",
+                  "icon": "",
+                  "config": {
+                    "reverse": false,
+                    "align": "",
+                    "span": false
+                  }
+                }
+              },
+              {
+                "title": "Hello world",
+                "text": "Optional anchor target blank links",
+                "link": {
+                  "variant": "text",
+                  "text": "itinstituttet.dk",
+                  "href": "https://itinstituttet.dk",
+                  "target": "_blank",
+                  "icon": "open_in_new",
+                  "config": {
+                    "reverse": false,
+                    "align": "",
+                    "span": false
+                  }
+                }
+              }
+            ],
+            "config": {
+              "type": "simple",
+              "columns": 4,
+              "align": "left"
+            }
+          }
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-grid-layout.liquid",
+        "data": {
+          "heading": {
+            "title": "Grid layout with styled cards",
+            "config": {
+              "headingLevel": 2,
+              "align": "left"
+            }
+          },
+          "grid": {
+            "items": [
+              {
+                "title": "Pokémon card limited edition",
+                "text": "Vestibulum blandit lorem elementum dignissim ornare.",
+                "icon": "payments",
+                "link": {
+                  "text": "Read more",
+                  "href": "#"
+                }
+              },
+              {
+                "title": "Another card title",
+                "text": "Do people even read real text? :thinking:",
+                "icon": "psychiatry",
+                "link": {
+                  "text": "Learn more",
+                  "href": "#"
+                }
+              },
+              {
+                "title": "Links are optional",
+                "text": "something something placeholder lorem ipsum text in latin",
+                "icon": "add_link",
+                "link": {
+                  "text": "",
+                  "href": ""
+                }
+              },
+              {
+                "title": "Optional anchor target blank links",
+                "text": "Turpis rhoncus orci ligula lorem",
+                "icon": "upload_file",
+                "link": {
+                  "text": "Open in new tab",
+                  "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "config": {
+              "type": "styled",
+              "columns": 4,
+              "align": "left"
+            }
+          }
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-simple-text.liquid",
+        "data": {
+          "heading": {
+            "title": "Simple block of text with optional cta buttons",
+            "config": {
+              "headingLevel": 2,
+              "align": "left"
+            }
+          },
+          "prose": {
+            "text": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "Duis sed nibh at iaculis cursus vitae dolor. Ut pulvinar leo eget risus volutpat consequat.",
+              "In bibendum ullamcorper massa vitae dolor et, vivamus sed diam efficitur. Aliquam semper pulvinar eros nec porta. Nunc urna massa."
+            ],
+            "config": {
+              "spacing": false,
+              "align": "left"
+            }
+          },
+          "links": [
+            {
+              "variant": "primary",
+              "text": "Download",
+              "href": "#",
+              "target": "",
+              "icon": "download",
+              "config": {
+                "reverse": false,
+                "align": "center",
+                "span": true
+              }
+            },
+            {
+              "variant": "text",
+              "text": "Preview product",
+              "href": "#",
+              "target": "",
+              "icon": "visibility",
+              "config": {
+                "reverse": false,
+                "align": "center",
+                "span": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-header.liquid",
+        "data": {
+          "logo": {
+            "text": "Logo",
+            "href": "#"
+          },
+          "search": {
+            "icon": "search",
+            "placeholder": "Find something..."
+          },
+          "navigation": [
+            {
+              "text": "Products",
+              "href": "#",
+              "target": ""
+            },
+            {
+              "text": "About",
+              "href": "#",
+              "target": ""
+            },
+            {
+              "text": "Contact",
+              "href": "#",
+              "target": ""
+            }
+          ],
+          "cta": {
+            "variant": "primary",
+            "text": "Log in",
+            "href": "#",
+            "target": "",
+            "icon": "login",
+            "config": {
+              "reverse": false,
+              "align": "center",
+              "span": true
+            }
+          },
+          "config": {
+            "sticky": false
+          }
+        }
+      }
+    ]
+  }
+}

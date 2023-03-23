@@ -1,0 +1,28 @@
+{% if data.link != blank %}
+{% assign element = "a" %}
+{% else %}
+{% assign element = "div" %}
+{% endif %}
+
+<article class="relative flex rounded-2xl transition-all bg-zinc-600/10 h-full ">
+
+  <{{element}} {% if data.link.href !=blank %}href="{{ data.link.href }}" {% endif %} {% if data.link.target=="_blank" %}target="_blank" {% endif %} {% if data.link.href !=blank
+    %}class="group hover:bg-zinc-800/50 hover:shadow-md hover:shadow-black/5 w-full rounded-2xl" {% endif %}>
+
+    <div
+      class="absolute inset-0 rounded-2xl ring-1 ring-inset transition-all duration-300 ring-white/10 group-hover:ring-primary-dark group-hover:shadow-lg group-hover:shadow-primary-dark/10">
+    </div>
+    <div class="relative rounded-2xl px-4 pt-16 pb-4 w-full flex flex-col {{ align }}">
+      <i class="material-symbols-outlined text-zinc-400 group-hover:text-primary-light w-max transition-all duration-300 ring-1 ring-inset ring-white/20 mb-4 p-1 rounded-full bg-zinc-800 group-hover:ring-primary-light"
+        aria-hidden="true" role="img" data-icon="{{ data.icon }}"></i>
+      <h{{ parentData.heading.config.headingLevel | plus: 1 }} class="text-sm font-semibold text-white">
+        {{ data.title }}
+      </h{{ parentData.heading.config.headingLevel | plus: 1 }}>
+      <p class="mt-1 text-sm text-zinc-400">
+        {{ data.text }}
+      </p>
+    </div>
+
+  </{{element}}>
+
+</article>

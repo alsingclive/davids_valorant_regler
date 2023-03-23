@@ -1,0 +1,63 @@
+{% block hero %}
+
+  <div
+    class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
+
+
+
+    <h1
+      class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+      {{ data.title.start }}
+      <span
+        class="relativetext-blue-600">{{ data.title.highlight }}</span>
+      {{ data.title.end }}
+    </h1>
+
+    <p
+      class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+      {{ data.subtitle }}
+    </p>
+    <div
+      class="mt-10 flex justify-center gap-x-6">
+
+      {% for button in data.buttons %}
+        {% render '/templates/salient/components/button.liquid', button: button %}
+      {% endfor %}
+
+
+    </div>
+    <div
+      class="mt-36 lg:mt-44">
+      <p
+        class="font-display text-base text-slate-900">
+        {{ data.details.text }}
+      </p>
+      <ul
+        role="list"
+        class="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0">
+
+        {% for column in data.details.items %}
+          <li>
+            <ul
+              role="list"
+              class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
+
+              {% for item in column %}
+                <li
+                  class="flex">
+                  <img
+                    src={{item.logo}}
+                    alt={{company.name}} />
+                </li>
+              {% endfor %}
+
+            </ul>
+          </li>
+        {% endfor %}
+
+
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}

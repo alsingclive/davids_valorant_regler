@@ -1,0 +1,14 @@
+{% layout '/templates/layout/default.liquid' %}
+
+{% block content %}
+
+<main class="w-full">
+
+  {% for element in data.elements %}
+
+  {% render element.template, data: element.data, id: element.id %}
+  {% endfor %}
+
+</main>
+
+{% endblock %}

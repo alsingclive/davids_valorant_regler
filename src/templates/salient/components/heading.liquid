@@ -1,0 +1,38 @@
+{% block heading %}
+
+  <div class="flex flex-col">
+
+    <a
+      href="{{heading.logo.href}}"
+      aria-label="Home"
+      class="flex items-center">
+      <img src="{{heading.logo.src}}" class="h-10 w-auto pr-2" />
+    </a>
+    <div class="mt-20">
+      <h1 class="text-3xl font-semibold text-gray-900">{{ heading.title }}</h1>
+      <h2 class="text-xl font-semibold text-gray-900">
+        {{ heading.subtitle }}
+      </h2>
+      {% for text in heading.text %}
+        {% if text.href %}
+          <p class="mt-2 text-sm text-gray-700">
+            {{ text.start }}
+            <a class="underline" href="{{text.href}}">{{ text.link }}</a>
+            {{ text.end }}
+          </p>
+        {% else %}
+
+          <p class="mt-2 text-sm text-gray-700">
+            {{ text.text }}
+          </p>
+        {% endif %}
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+
+
+{% endblock %}

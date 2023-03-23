@@ -1,0 +1,67 @@
+{
+  "templateName": "/templates/pages/dynamic.liquid",
+  "routeTemplate": "/",
+  "active": true,
+  "data": {
+    "title": "Davids Valorant Regler",
+    "elements": [
+      {
+        "template": "/templates/demo/components/demo-hero-half.liquid",
+        "data": {
+          "scroll_ref": "#paragraf1",
+          "links": [
+            {
+              "text": "Regler",
+              "href": "#paragraf1",
+              "icon": "expand_more"
+            }
+          ],
+          "hero_image": "/assets/bg/valorant.jpg",
+          "title": "Davids Valorant Regler",
+          "subtitle": "Disse regler er ikke til diskussion. De er lov!",
+          "text": "Lavet af alsingclive"
+        }
+      },
+      {
+        "template": "/templates/demo/components/paragraffer.liquid",
+        "data": {
+          "title": "Paragraf 1",
+          "subtitle": "Regler Angående Duelist",
+          "links": [
+            {
+              "title": "Valg af Duelist Agent",
+              "text": "<br>1.1 Ved valg af Duelist agent i computerspillet Valorant er spilleren pålagt at opnå mindst 20 elimineringer under spillets varighed. <br> <br> 1.2 Såfremt spilleren vælger agenten Reyna specifikt, er spilleren pålagt at opnå mindst 25 eliminations under spillets varighed.",
+              "chips": [
+                "Duelist paragraf"
+              ],
+              "title_2": "Konsekvenser af overtrædelse af reglen",
+              "text_2": " <br>2.1 Overtrædelse af paragraf 1.1 og 1.2 kan resultere i tab af spillets runde eller en form for straf, som fastsat af de spillere, der er berørt af overtrædelsen.<br><br>2.2 Gentagne overtrædelser af reglen kan føre til yderligere sanktioner, herunder men ikke begrænset til suspendering af spillerens ret til at vælge Duelist eller Reyna i fremtidige spil."
+            }
+          ],
+          "text": "Især N og Chrillo skal kigge med her"
+        },
+        "id": "paragraf1"
+      },
+      {
+        "template": "/templates/demo/components/paragraffer.liquid",
+        "data": {
+          "title": "Paragraf 2",
+          "subtitle": "Regler Angående Duelist",
+          "links": [
+            {
+              "title": "Valg af Duelist Agent",
+              "text": "<br>1.1 Ved valg af Duelist agent i computerspillet Valorant er spilleren pålagt at opnå mindst 20 elimineringer under spillets varighed. <br> <br> 1.2 Såfremt spilleren vælger agenten Reyna specifikt, er spilleren pålagt at opnå mindst 25 eliminations under spillets varighed.",
+              "chips": [
+                "Duelist paragraf"
+              ],
+              "title_2": "Konsekvenser af overtrædelse af reglen",
+              "text_2": " <br>2.1 Overtrædelse af paragraf 1.1 og 1.2 kan resultere i tab af spillets runde eller en form for straf, som fastsat af de spillere, der er berørt af overtrædelsen.<br><br>2.2 Gentagne overtrædelser af reglen kan føre til yderligere sanktioner, herunder men ikke begrænset til suspendering af spillerens ret til at vælge Duelist eller Reyna i fremtidige spil."
+            }
+          ],
+          "text": "Især N og Chrillo skal kigge med her"
+        },
+        "id": "paragraf1"
+      }
+    ]
+  }
+}

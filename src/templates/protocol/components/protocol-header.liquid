@@ -1,0 +1,48 @@
+<div
+  class="{% if data.config.sticky == true %}sticky top-0 {% endif %}inset-x-0 z-50 flex h-14 items-center justify-between gap-3 lg:gap-12 px-4 transition sm:px-6 lg:z-30 lg:px-8 backdrop-blur-sm w-full">
+  <span class="absolute inset-x-0 top-full h-px transition bg-white/10"></span>
+  <button type="button" class="flex sm:hidden h-6 w-6 items-center justify-center rounded-md transition hover:bg-white/5">
+    <i class="material-symbols-outlined text-white text-lg" aria-hidden="true" role="img" data-icon="menu"></i>
+  </button>
+  <a href="{{ data.logo.href }}" class="text-white font-semibold text-xl mr-auto">{{ data.logo.text }}</a>
+
+  {% render "/templates/protocol/components/protocol-search.liquid", data: data.search %}
+
+  <div class="flex items-center gap-5">
+    <nav class="hidden sm:block">
+      <ul role="list" class="flex items-center gap-8">
+
+        {% for item in data.navigation %}
+
+        <li>
+          <a href="{{ item.href }}" {% if item.target=="_blank" %}target="_blank" {% endif %} class="text-sm leading-5 transition text-zinc-400 hover:text-white">{{ item.text
+            }}</a>
+        </li>
+
+        {% endfor %}
+
+      </ul>
+    </nav>
+    <div class="hidden sm:block sm:h-5 sm:w-px sm:bg-white/10"></div>
+    <div class="flex gap-4">
+      <button type="button" class="flex h-6 w-6 items-center justify-center rounded-md transition hover:bg-white/5 lg:hidden">
+        <i class="material-symbols-outlined text-white text-lg" aria-hidden="true" role="img" data-icon="search"></i>
+      </button>
+      <button type="button" class="flex h-6 w-6 items-center justify-center rounded-md transition hover:bg-white/5">
+        <i class="material-symbols-outlined text-white text-lg" aria-hidden="true" role="img" data-icon="dark_mode"></i>
+      </button>
+    </div>
+
+    {% if data.cta %}
+
+    <div class="hidden min-[416px]:contents">
+
+      {% render "/templates/protocol/components/protocol-cta.liquid", data: data.cta %}
+
+    </div>
+
+    {% endif %}
+
+  </div>
+
+</div>

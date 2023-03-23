@@ -1,0 +1,58 @@
+{% case data.grid.config.columns %}
+{% when 4 %}
+{% assign gridClasses = "grid-cols-1 sm:grid-cols-2 xl:grid-cols-4" %}
+
+{% when 3 %}
+{% assign gridClasses = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" %}
+
+{% when 2 %}
+{% assign gridClasses = "grid-cols-1 sm:grid-cols-2" %}
+
+{% endcase %}
+
+{% case data.grid.config.align %}
+{% when "left" %}
+{% assign align = "items-start text-left" %}
+
+{% when "center" %}
+{% assign align = "items-center text-center" %}
+
+{% when "right" %}
+{% assign align = "items-end text-right" %}
+
+{% else %}
+{% assign align = "items-start text-left" %}
+
+{% endcase %}
+
+
+<section class="my-16 md:my-32 px-6 max-w-7xl mx-auto">
+
+  {% if data.heading != blank %}
+
+  {% render "/templates/protocol/components/protocol-heading.liquid" data: data.heading %}
+
+  {% endif %}
+
+  <ul class="not-prose mt-4 border-t pt-10 border-white/5 grid gap-x-8 gap-y-6 {{ gridClasses }}">
+
+    {% for item in data.grid.items %}
+
+    <li>
+
+      {% case data.grid.config.type %}
+
+      {% when "simple" %}
+      {% render "/templates/protocol/components/protocol-card-simple.liquid", data: item, parentData: data, align: align %}
+
+      {% when "styled" %}
+      {% render "/templates/protocol/components/protocol-card-styled.liquid", data: item, parentData: data, align: align %}
+
+      {% endcase %}
+
+    </li>
+
+    {% endfor %}
+
+  </ul>
+</section>

@@ -1,0 +1,46 @@
+<div {% if id !=blank %} id="{{ id }}" {% endif %} class="w-full {% if data.gray %} bg-gray-100" {% endif %}">
+  <div class="reveal fade-bottom max-w-screen-2xl mx-auto flex flex-col md:flex-row">
+    <div class="basis-8/12 {% if data.image_first %} order-1 {% endif %}">
+      <div class="flex flex-col p-4 md:p-12">
+        <div class="flex flex-col">
+
+          {% if data.title %}
+          <h2 class="text-3xl md:text-5xl font-extrabold font-serif my-4">{{ data.title }}</h2>
+          {% endif %}
+          {% if data.subtitle %}
+          <h3 class="text-lg text-manchet center-block text-body-lg mb-4">{{ data.subtitle }}</h3>
+          {% endif %}
+
+        </div>
+        <div class="flex flex-col md:flex-row md:space-x-5">
+
+          {% for column in data.columns %}
+
+          <div class="basis-full pt-4 flex flex-col">
+            {% if column.title %}
+            <h4 class="text-lg font-bold">{{ column.title }}</h4>
+            {% endif %}
+            {% if column.subtitle %}
+            <h5 class="text-black/60 -order-1">{{ column.subtitle }}</h5>
+            {% endif %}
+            {% if column.text.first %}
+            {% for text in column.text %}
+            <p class="pt-4">{{ text }}</p>
+            {% endfor %}
+            {% else if column.text != blank %}
+            <p class="pt-4">{{ column.text }}</p>
+            {% endif %}
+          </div>
+
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+    <div class="basis-4/12">
+      <div class="relative w-full h-80 md:h-full z-1">
+        <div class="w-full h-full bg-center bg-cover" style=" background-image: url({{ data.image }});"></div>
+      </div>
+    </div>
+  </div>
+</div>

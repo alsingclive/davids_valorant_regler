@@ -1,0 +1,66 @@
+{
+  "templateName": "/templates/pages/salient.liquid",
+  "routeTemplate": "/salient/login",
+  "active": true,
+  "data": {
+    "title": "Salient Login",
+    "elements": [
+      {
+        "template": "/templates/salient/pages/register.liquid",
+        "data": {
+          "bg_img": "/assets/bg/bg1.jpg",
+          "heading": {
+            "logo": {
+              "href": "/salient",
+              "src": "/assets/logo/logo1.svg"
+            },
+            "title": "Sign in to your account",
+            "subtitle": "",
+
+            "text": [
+              {
+                "text": "Lots and lots of text"
+              },
+              {
+                "start": "Don't have an account?",
+                "link": "Sign up",
+                "href": "/salient/register",
+                "end": "for a free trial."
+              }
+            ]
+          },
+          "form": {
+            "fields": {
+              "input": [
+                {
+                  "id": "email",
+                  "name": "email",
+                  "label": "Email address",
+                  "type": "email",
+                  "autocomplete": "email",
+                  "full": true,
+                  "required": true
+                },
+                {
+                  "id": "password",
+                  "name": "password",
+                  "label": "Password",
+                  "type": "password",
+                  "autocomplete": "password",
+                  "full": true,
+                  "required": true
+                }
+              ]
+            },
+            "button": {
+              "type": "submit",
+              "text": "Sign in →",
+              "variant": "solid",
+              "full": true
+            }
+          }
+        }
+      }
+    ]
+  }
+}

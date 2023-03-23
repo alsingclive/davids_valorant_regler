@@ -1,0 +1,14 @@
+<div
+  class="w-full absolute z-10 px-5 bg-black/50 flex flex-wrap items-center justify-between mx-auto">
+  <span
+    class="float-left text-white text-lg">My togafy site</span>
+  <div>
+    {% for nav in navigation %}
+      <a
+        class="inline-block p-5 text-white/50 hover:text-white"
+        href="{{ nav.href }}">{{ nav.title }}
+
+      </a>
+    {% endfor %}
+  </div>
+</div>

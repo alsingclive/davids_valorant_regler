@@ -1,0 +1,18 @@
+{% block select-field %}
+<div {% if field.full %}class="col-span-full"{% endif %}>
+
+<label for="{{field.name}}" class="mb-3 block text-sm font-medium text-gray-700">{{ field.label }}</label>
+<select
+  id="{{field.id}}"
+  name="{{field.name}}"
+  {% if field.required == true %}
+  required
+  {% endif %}
+  class="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm pr-8">
+  {% for option in field.options %}
+    <option value="{{option}}">{{option}}</option>
+  {% endfor %}
+</select>
+</div>
+
+{% endblock %}

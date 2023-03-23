@@ -1,0 +1,54 @@
+<div class="w-full min-h-screen min-h-[-webkit-fill-available] bg-right bg-cover bg-fixed bg-black" style="background-image: url('{{ data.hero_image }}');">
+  <div class="w-full h-full min-h-screen bg-black/60 md:bg-black/25 flex flex-col justify-end">
+    <div class="reveal fade-bottom flex flex-col justify-center md:justify-end px-12 pt-24 md:px-24 text-white text-center md:text-left my-auto md:my-0">
+      <h1 class="text-3xl md:text-6xl font-extrabold font-serif text-center md:text-start">{{ data.title }}</h1>
+
+      {% if data.subtitle != blank %}
+
+      <h2 class="text-2xl md:text-4xl text-center md:text-start mt-3">{{ data.subtitle }}</h2>
+
+      {% endif %}
+
+      {% if data.text != blank %}
+
+      <hr class="block border-1 w-36 max-w-full my-3 md:my-6 border-transparent bg-transparent md:border-primary md:bg-primary" />
+      <p class="text-lg">{{ data.text }}</p>
+
+      {% endif %}
+
+      {% if data.links.first %}
+
+      <div class="flex flex-col md:flex-row pt-6">
+
+        {% for link in data.links %}
+
+        <a href="{{ link.href }}" {% if link.title !=blank %} title="{{ link.title }}" {% endif %} {% if link.target !=blank %} target="{{ link.target }}" {% endif %} {% if
+          link.rel !=blank %} rel="{{ link.rel }}" {% endif %}
+          class="my-2 end flex flex-row justify-center w-full md:w-auto rounded-full items-center px-9 py-3 md:mr-4 transition-colors {% if forloop.last != true %} border border-white/80 bg-transparent hover:border-white hover:bg-white/10 {% else %} bg-primary-dark hover:bg-primary {% endif %} ">
+          {{ link.text }}
+          {% if link.icon != blank %}
+          <i class="material-symbols-outlined pl-3" aria-hidden="true" role="img" data-icon="{{ link.icon }}"></i>
+
+          {% endif %}
+
+        </a>
+
+        {% endfor %}
+
+      </div>
+
+      {% endif %}
+
+    </div>
+
+    {% if data.scroll_ref != blank %}
+
+    <a class="justify-center items-end w-full flex flex-row pb-6 h-24 transition-colors text-white/40 text-center hover:text-white mt-auto md:mt-0" href="{{ data.scroll_ref }}"
+      aria-label="Scroll ned til næste sektion">
+      <i class="material-symbols-outlined text-5xl" aria-hidden="true" role="img" data-icon="keyboard_arrow_down"></i>
+    </a>
+
+    {% endif %}
+
+  </div>
+</div>

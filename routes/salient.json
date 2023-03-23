@@ -1,0 +1,427 @@
+{
+  "templateName": "/templates/pages/designer.liquid",
+  "routeTemplate": "/salient",
+  "active": true,
+  "data": {
+    "title": "Salient Template",
+    "elements": [
+      {
+        "template": "/templates/salient/components/header.liquid",
+        "data": {
+          "logo": {
+            "href": "/salient",
+            "src": "/assets/logo/logo1.svg"
+          },
+          "navigation": {
+            "left": [
+              {
+                "href": "/salient",
+                "text": "Home"
+              },
+              {
+                "href": "#",
+                "text": "Prices"
+              },
+              {
+                "href": "#",
+                "text": "About"
+              }
+            ],
+            "right": [
+              {
+                "href": "/salient/login",
+                "text": "Sign in"
+              }
+            ],
+            "button": {
+              "type": "submit",
+              "text": "Get started today",
+              "variant": "solid",
+              "full": true
+            }
+          }
+        }
+      },
+      {
+        "template": "/templates/salient/components/hero.liquid",
+        "data": {
+          "title": {
+            "start": "Lorem",
+            "highlight": " made simple ",
+            "end": "for small businesses."
+          },
+          "subtitle": "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.",
+          "buttons": [
+            {
+              "type": "link",
+              "href": "/salient/register",
+              "text": "Get 6 months free",
+              "variant": "solid"
+            },
+            {
+              "type": "submit",
+              "text": "Watch video →",
+              "variant": "outline"
+            }
+          ],
+          "details": {
+            "text": "Trusted by these six companies",
+            "items": [
+              [
+                { "name": "LogoIpsum2", "logo": "/assets/logo/logo2.svg" },
+                { "name": "LogoIpsum3", "logo": "/assets/logo/logo3.svg" },
+                { "name": "LogoIpsum4", "logo": "/assets/logo/logo4.svg" }
+              ],
+              [
+                { "name": "LogoIpsum5", "logo": "/assets/logo/logo5.svg" },
+                { "name": "LogoIpsum1", "logo": "/assets/logo/logo1.svg" },
+                { "name": "LogoIpsum6", "logo": "/assets/logo/logo6.svg" }
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "template": "/templates/salient/pages/register.liquid",
+        "data": {
+          "bg_img": "/assets/bg/bg1.jpg",
+          "heading": {
+            "logo": {
+              "href": "/salient",
+              "src": "/assets/logo/logo1.svg"
+            },
+            "title": "Get started for free",
+            "subtitle": "Lots and lots of text",
+
+            "text": [
+              {
+                "text": ""
+              },
+              {
+                "start": "Already registered? ",
+                "link": "Sign in",
+                "href": "/salient/login",
+                "end": "to your account"
+              }
+            ]
+          },
+          "form": {
+            "fields": {
+              "input": [
+                {
+                  "id": "first-name",
+                  "name": "first-name",
+                  "label": "First Name",
+                  "type": "first-name",
+                  "autocomplete": "first-name",
+
+                  "required": true
+                },
+                {
+                  "id": "last-name",
+                  "name": "last-name",
+                  "label": "Last Name",
+                  "type": "last-name",
+                  "autocomplete": "last-name",
+
+                  "required": true
+                },
+                {
+                  "id": "email",
+                  "name": "email",
+                  "label": "Email address",
+                  "type": "email",
+                  "autocomplete": "email",
+                  "full": true,
+                  "required": true
+                },
+                {
+                  "id": "password",
+                  "name": "password",
+                  "label": "Password",
+                  "type": "password",
+                  "autocomplete": "password",
+                  "full": true,
+                  "required": true
+                }
+              ],
+              "select": [
+                {
+                  "id": "referral_source",
+                  "name": "referral_source",
+                  "label": "Where did you hear about us?",
+                  "type": "referral_source",
+                  "autocomplete": "referral_source",
+                  "full": true,
+                  "required": true,
+                  "options": [
+                    "AltaVista search",
+                    "Super Bowl commercial",
+                    "Our route 34 city bus ad",
+                    "The “Never Use This” podcast"
+                  ]
+                }
+              ]
+            },
+            "button": {
+              "type": "submit",
+              "text": "Submit →",
+              "variant": "solid",
+              "full": true
+            }
+          }
+        }
+      },
+      {
+        "template": "/templates/salient/pages/login.liquid",
+        "data": {
+          "bg_img": "/assets/bg/bg1.jpg",
+          "heading": {
+            "logo": {
+              "href": "/salient",
+              "src": "/assets/logo/logo1.svg"
+            },
+            "title": "Sign in to your account",
+            "subtitle": "",
+
+            "text": [
+              {
+                "text": "Lots and lots of text"
+              },
+              {
+                "start": "Don't have an account?",
+                "link": "Sign up",
+                "href": "/salient/register",
+                "end": "for a free trial."
+              }
+            ]
+          },
+          "form": {
+            "fields": {
+              "input": [
+                {
+                  "id": "email",
+                  "name": "email",
+                  "label": "Email address",
+                  "type": "email",
+                  "autocomplete": "email",
+                  "full": true,
+                  "required": true
+                },
+                {
+                  "id": "password",
+                  "name": "password",
+                  "label": "Password",
+                  "type": "password",
+                  "autocomplete": "password",
+                  "full": true,
+                  "required": true
+                }
+              ]
+            },
+            "button": {
+              "type": "link",
+              "href": "/salient/register",
+              "text": "Sign in →",
+              "variant": "solid",
+              "full": true
+            }
+          }
+        }
+      },
+      {
+        "template": "/templates/salient/components/cta.liquid",
+        "data": {
+          "id": "call-to-action",
+          "bg_img": "/assets/bg/bg1.jpg",
+          "title": "Get started today",
+          "text": [
+            "It's time to take control of your books.",
+            "Buy our software so you can feel like you're doing something productive."
+          ],
+          "button": {
+            "type": "link",
+            "href": "/salient/register",
+            "text": "Get 6 months free",
+            "variant": "outline"
+          }
+        }
+      },
+      {
+        "template": "/templates/salient/components/footer.liquid",
+        "data": {
+          "logo": {
+            "href": "/salient",
+            "src": "/assets/logo/logo1.svg"
+          },
+          "navigation": {
+            "main": [
+              {
+                "href": "/salient",
+                "text": "Home"
+              },
+              {
+                "href": "#",
+                "text": "Prices"
+              },
+              {
+                "href": "#",
+                "text": "About"
+              }
+            ],
+            "social": [
+              {
+                "href": "https://twitter.com",
+                "text": "Follow us on Twitter",
+                "icon": "twitter"
+              },
+              {
+                "href": "https://github.com",
+                "text": "Find us on Github",
+                "icon": "github"
+              }
+            ],
+            "button": {
+              "type": "submit",
+              "text": "Get started today",
+              "variant": "solid",
+              "full": true
+            },
+            "copy": {
+              "text": "Copyright &copy;",
+              "name": "Togafy.",
+              "detail": "All rights reserved."
+            }
+          }
+        }
+      },
+      {
+        "template": "/templates/salient/components/pricing.liquid",
+        "data": {
+         "title":"Simple pricing, for everyone.",
+         "subtitle": "Bring to the table win-win survival strategies to ensure proactive domination.",
+         "sections":[
+          {
+            "title":"Starter",
+            "order":"",
+            "description":"Good for anyone who is self-employed and just getting started.",
+            "price":"89 DKK",
+            "features":[
+              "Send 10 quotes and invoices",
+              "Connect up to 2 bank accounts",
+              "Track up to 15 expenses per month",
+              "Manual payroll support",
+              "Export up to 3 reports"
+            ],
+            "button": {
+              "type": "link",
+              "href":"/salient/register",
+              "text": "Get started",
+              "variant": "outline",
+              "full": true
+            }
+          },
+          {
+            "title":"Small business",
+            "description":"Perfect for small / medium sized businesses",
+            "price":"120 DKK",
+            "order":"first",
+            "features":[
+              "Send 25 quotes and invoices",
+              "Connect up to 5 bank accounts",
+              "Track up to 50 expenses per month",
+              "Automated payroll support",
+              "Export up to 12 reports",
+              "Bulk reconcile transactions",
+              "Track in multiple currencies"
+            ],
+            "button": {
+              "type": "link",
+              "href":"/salient/register",
+              "text": "Get started",
+              "variant": "solid",
+              "full": true
+            }
+          },
+          {
+            "title":"Enterprise",
+            "description":"For even the biggest enterprise companies.",
+            "price":"350 DKK",
+            "order":"",
+            "features":[
+              "Send unlimited quotes and invoices",
+              "Connect up to 15 bank accounts",
+              "Track up to 200 expenses per month",
+              "Automated payroll support",
+              "Export up to 25 reports, including TPS"
+            ],
+            "button": {
+              "type": "link",
+              "href":"/salient/register",
+              "text": "Get started",
+              "variant": "outline",
+              "full": true
+            }
+          }
+         ]
+        }
+      },
+      {
+        "template": "/templates/salient/components/faqs.liquid",
+        "data": {
+          "id": "faq",
+          "faq": "faq-title",
+          "title": "Frequently asked questions",
+          "subtitle": [
+            "If you can't find what you're looking for, email our support team and someone will get back to you."
+          ],
+          "bg_img": "/assets/bg/bg2.jpg",
+          "texts": [
+            [
+              {
+                "question": "Leverage agile frameworks to provide a robust synopsis for high level overviews?",
+                "answer": "Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+              },
+              {
+                "question": "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test?",
+                "answer": "Override the digital divide with additional clickthroughs from DevOps."
+              },
+              {
+                "question": "Leverage agile frameworks to provide a robust synopsis for high level overviews?",
+                "answer": "Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+              }
+            ],
+            [
+              {
+                "question": "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test?",
+                "answer": "Override the digital divide with additional clickthroughs from DevOps."
+              },
+              {
+                "question": "Leverage agile frameworks to provide a robust synopsis for high level overviews?",
+                "answer": "Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+              },
+              {
+                "question": "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test?",
+                "answer": "Override the digital divide with additional clickthroughs from DevOps."
+              }
+            ],
+            [
+              {
+                "question": "Leverage agile frameworks to provide a robust synopsis for high level overviews?",
+                "answer": "Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+              },
+              {
+                "question": "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test?",
+                "answer": "Override the digital divide with additional clickthroughs from DevOps."
+              },
+              {
+                "question": "Leverage agile frameworks to provide a robust synopsis for high level overviews?",
+                "answer": "Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

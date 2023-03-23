@@ -1,0 +1,68 @@
+<div {% if id !=blank %}id="{{ id }}" {% endif
+  %}class="w-full max-w-screen-2xl mx-auto flex flex-col items-center my-12">
+
+  {% render "/templates/demo/components/demo-centered-header.liquid", data: data %}
+
+  <div class="flex flex-col sm:flex-row flex-wrap px-6">
+
+    {% for card in data.elements %}
+
+    {% if data.styled %}
+
+    <div class="reveal fade-bottom sm:w-1/2 lg:w-1/3 py-4 lg:py-6 px-6 flex flex-col group">
+      <div
+        class="p-6 md:p-10 bg-gray-50 rounded-lg transition-colors border hover:border-primary shadow-sm hover:shadow-lg">
+        <div class="h-12 mb-6 lg:flex lg:items-end">
+          <img class="max-w-full mr-auto max-h-12" loading="lazy" src="{{ card.img }}" {% if card.alt !=blank
+            %}alt="{{ card.alt }}" {% endif %}>
+        </div>
+        {% if card.title != blank %}
+        <h3 class="text-3xl">{{ card.title }}</h3>
+        {% endif %}
+
+        {% if card.text.first %}
+        {% for text in card.text %}
+        <p class="pt-4">{{ text }}</p>
+        {% endfor %}
+        {% else if card.text != blank %}
+        <p class="pt-4">{{ card.text }}</p>
+        {% endif %}
+      </div>
+    </div>
+
+    {% else %}
+
+    <div class="reveal fade-bottom lg:w-1/3 py-10 px-5 flex flex-col group">
+      <div class="lg:h-64 mb-6 lg:flex lg:items-end">
+        <img class="max-w-full mx-auto max-h-64" loading="lazy" src="{{ card.img }}" {% if card.alt !=blank
+          %}alt="{{ card.alt }}" {% endif %}>
+      </div>
+      {% if card.title != blank %}
+      <h3 class="text-3xl">{{ card.title }}</h3>
+      {% endif %}
+
+      {% if card.text.first %}
+      {% for text in card.text %}
+      <p class="pt-4">{{ text }}</p>
+      {% endfor %}
+      {% else if card.text != blank %}
+      <p class="pt-4">{{ card.text }}</p>
+      {% endif %}
+
+      {% if card.link != blank %}
+      <a href="{{ card.link.href }}" title="{{ card.link.title }}"
+        class="flex flex-row mt-auto pt-6 transition-colors text-primary-dark text-xl hover:text-primary">
+        <span class="border-b border-dotted border-primary">{{ card.link.text }}</span>
+        {% if card.link.icon != blank %}
+        <i class="material-symbols-outlined px-2 mt-1" aria-hidden="true" role="img"
+          data-icon="{{ card.link.icon }}"></i>
+        {% endif %}
+      </a>
+      {% endif %}
+    </div>
+
+    {% endif %}
+
+    {% endfor %}
+  </div>
+</div>

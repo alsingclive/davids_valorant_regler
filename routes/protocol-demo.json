@@ -1,0 +1,291 @@
+{
+  "templateName": "/templates/pages/protocol-demo.liquid",
+  "routeTemplate": "/protocol/demo",
+  "active": true,
+  "data": {
+    "title": "Protocol demo",
+    "elements": [
+      {
+        "template": "/templates/protocol/components/protocol-header.liquid",
+        "data": {
+          "logo": {
+            "text": "Protocol demo",
+            "href": "/protocol/demo"
+          },
+          "search": {
+            "icon": "search",
+            "placeholder": "Find something..."
+          },
+          "navigation": [
+            {
+              "text": "Products",
+              "href": "#",
+              "target": ""
+            },
+            {
+              "text": "About",
+              "href": "#",
+              "target": ""
+            },
+            {
+              "text": "Contact",
+              "href": "#",
+              "target": ""
+            }
+          ],
+          "cta": {
+            "variant": "primary",
+            "text": "Log in",
+            "href": "#",
+            "target": "",
+            "icon": "login",
+            "config": {
+              "reverse": false,
+              "align": "center",
+              "span": true
+            }
+          },
+          "config": {
+            "sticky": true
+          }
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-simple-text.liquid",
+        "data": {
+          "heading": {
+            "title": "Be the First to Play Our Beta Release",
+            "config": {
+              "headingLevel": 1,
+              "align": "left"
+            }
+          },
+          "prose": {
+            "text": [
+              "In hac habitasse platea dictumst. Integer pretium mi vel metus tempus porta. Ut vitae tortor ac risus eleifend scelerisque in id eros. Sed in facilisis ligula, iaculis auctor mi.",
+              "Morbi non elit quis risus cursus accumsan. In auctor blandit odio egestas viverra."
+            ],
+            "config": {
+              "spacing": true,
+              "align": "left"
+            }
+          },
+          "links": [
+            {
+              "variant": "primary",
+              "text": "Join for Early Access",
+              "href": "#",
+              "target": "",
+              "icon": "rocket_launch",
+              "config": {
+                "reverse": false,
+                "align": "center",
+                "span": true
+              }
+            },
+            {
+              "variant": "text",
+              "text": "Explore the universe of Foo Bar",
+              "href": "#",
+              "target": "",
+              "icon": "visibility",
+              "config": {
+                "reverse": false,
+                "align": "center",
+                "span": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-grid-layout.liquid",
+        "data": {
+          "heading": {
+            "title": "Game features",
+            "config": {
+              "headingLevel": 2,
+              "align": "left"
+            }
+          },
+          "grid": {
+            "items": [
+              {
+                "title": "Immersive open world",
+                "text": "Cras ullamcorper sapien eget arcu tempor fringilla. Praesent scelerisque varius mollis. Aliquam mollis rutrum nisi dignissim ultrices.",
+                "icon": "travel_explore",
+                "link": {
+                  "href": "#"
+                }
+              },
+              {
+                "title": "Diverse range of activities",
+                "text": "Etiam tristique rhoncus nisi, nec aliquam quam dignissim sed. Vivamus malesuada ullamcorper erat eu egestas.",
+                "icon": "insights",
+                "link": {
+                  "href": "#"
+                }
+              },
+              {
+                "title": "Meaningful player choices",
+                "text": "Etiam pellentesque laoreet purus, vitae tristique nisi volutpat ut. Praesent ullamcorper ultrices tellus semper porta.",
+                "icon": "cognition",
+                "link": {
+                  "href": "#"
+                }
+              }
+            ],
+            "config": {
+              "type": "styled",
+              "columns": 3,
+              "align": "left"
+            }
+          }
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-simple-text.liquid",
+        "data": {
+          "heading": {
+            "title": "Fusce ultricies metus quis dolor luctus accumsan",
+            "config": {
+              "headingLevel": 2,
+              "align": "center"
+            }
+          },
+          "prose": {
+            "text": [
+              "Morbi fringilla, dui at vehicula mattis, ex magna varius turpis, nec ornare diam nulla sit amet lacus. Nulla ac efficitur turpis. Nam rutrum venenatis elit."
+            ],
+            "config": {
+              "spacing": false,
+              "align": "center"
+            }
+          }
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-grid-layout.liquid",
+        "data": {
+          "heading": {
+            "title": "Patch notes",
+            "config": {
+              "headingLevel": 2,
+              "align": "left"
+            }
+          },
+          "grid": {
+            "items": [
+              {
+                "title": "Magna ex interdum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "link": {
+                  "variant": "primary",
+                  "text": "Read more",
+                  "href": "#",
+                  "target": "",
+                  "icon": "navigate_next",
+                  "config": {
+                    "reverse": false,
+                    "align": "left",
+                    "span": false
+                  }
+                }
+              },
+              {
+                "title": "Fermentum justo",
+                "text": "Duis arcu tellus, efficitur a pulvinar ultricies, pretium ut ipsum.",
+                "link": {
+                  "variant": "",
+                  "text": "",
+                  "href": "",
+                  "target": "",
+                  "icon": "",
+                  "config": {
+                    "reverse": false,
+                    "align": "left",
+                    "span": false
+                  }
+                }
+              },
+              {
+                "title": "Non condimentum",
+                "text": "Praesent gravida libero nec finibus mollis.",
+                "link": {
+                  "variant": "",
+                  "text": "",
+                  "href": "",
+                  "target": "",
+                  "icon": "",
+                  "config": {
+                    "reverse": false,
+                    "align": "",
+                    "span": false
+                  }
+                }
+              },
+              {
+                "title": "Pharetra pretium",
+                "text": "Etiam mollis quam lacus, nec fermentum neque volutpat eu.",
+                "link": {
+                  "variant": "",
+                  "text": "",
+                  "href": "",
+                  "target": "",
+                  "icon": "",
+                  "config": {
+                    "reverse": false,
+                    "align": "",
+                    "span": false
+                  }
+                }
+              }
+            ],
+            "config": {
+              "type": "simple",
+              "columns": 4,
+              "align": "left"
+            }
+          }
+        }
+      },
+      {
+        "template": "/templates/protocol/components/protocol-simple-text.liquid",
+        "data": {
+          "heading": {
+            "title": "Download Beta Release",
+            "config": {
+              "headingLevel": 2,
+              "align": "left"
+            }
+          },
+          "prose": {
+            "text": [
+              "In laoreet faucibus lobortis. Aliquam vel semper neque. Fusce eu sapien ut tortor ornare dictum et vitae odio. Praesent placerat mattis sem. Proin imperdiet pharetra tortor at faucibus.",
+              "Vestibulum congue pulvinar mi vel aliquam. Proin nec tincidunt sapien.",
+              "Cras lobortis ex elit, non condimentum lorem condimentum eu."
+            ],
+            "config": {
+              "spacing": false,
+              "align": "left"
+            }
+          },
+          "links": [
+            {
+              "variant": "text",
+              "text": "Download v.0.11.2b",
+              "href": "#",
+              "target": "",
+              "icon": "download",
+              "config": {
+                "reverse": false,
+                "align": "center",
+                "span": true
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

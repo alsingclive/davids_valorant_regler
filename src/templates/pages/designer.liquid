@@ -1,0 +1,34 @@
+{% case data.url %}
+{% when "/protocol" %}
+{% assign whitespace = "max-w-7xl mt-4 mb-12 px-6" %}
+
+{% endcase %}
+
+{% layout '/templates/layout/default.liquid' %}
+
+{% block content %}
+
+<section>
+
+  <div class="bg-black h-24"></div>
+
+  {% for element in data.elements %}
+
+  <code class="bg-black text-center text-white p-10 text-lg w-full flex flex-col gap-8">
+    <span>
+      {{ element.template }}
+    </span>
+    <span class="text-sm break-words">
+      {{ element | json | raw }}
+    </span>
+  </code>
+
+  <div class="mx-auto {{ whitespace }} ">
+    {% render element.template, data: element.data, id: element.id %}
+  </div>
+
+  {% endfor %}
+
+</section>
+
+{% endblock %}

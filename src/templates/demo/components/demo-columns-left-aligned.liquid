@@ -1,0 +1,41 @@
+<div {% if id !=blank %}id="{{ id }}" {% endif %} {% if data.gray %} class="bg-gray-100" {% endif %}>
+  <div class="reveal fade-bottom max-w-screen-2xl mx-auto p-4 md:p-12">
+
+    {% if data.title != blank %}
+
+    <h2 class="text-3xl md:text-5xl font-extrabold font-serif my-4">{{ data.title }}</h2>
+
+    {% endif %}
+
+    {% if data.subtitle != blank %}
+
+    <h3 class="text-lg text-manchet center-block text-body-lg mb-4">{{ data.subtitle }}</h3>
+
+    {% endif %}
+
+    {% if data.columns.first %}
+
+    <div class="flex flex-col md:flex-row md:space-x-5">
+      {% for column in data.columns %}
+      <div class="basis-full">
+        {% if column.title %}
+        <h4 class="text-lg pt-4 font-bold">{{ column.title }}</h4>
+        {% endif %}
+        {% if column.text.first %}
+        {% for text in column.text %}
+        <p class="pt-4">{{ text }}</p>
+        {% endfor %}
+        {% else if column.text != blank %}
+        <p class="pt-4">{{ column.text }}</p>
+        {% endif %}
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+    {% endif %}
+
+  </div>
+
+</div>

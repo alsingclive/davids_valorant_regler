@@ -1,0 +1,13 @@
+{% block one_person %}
+
+<div {% if id !=blank %} id="{{ id }}" {% endif %}
+  class="w-full flex flex-col items-center text-center py-12 bg-gray-100">
+
+  {% render "/templates/demo/components/demo-centered-header.liquid", data: data %}
+
+  <div class="p-4 w-full md:w-4/5 md:max-w-2xl">
+    {% render "/templates/demo/components/demo-person.liquid", data: data.character %}
+  </div>
+</div>
+
+{% endblock %}

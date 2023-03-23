@@ -1,0 +1,21 @@
+<div class="reveal fade-bottom flex flex-col items-center px-6">
+
+  {% if data.title != blank %}
+
+  <h2 class="text-3xl md:text-5xl font-extrabold font-serif my-4">{{ data.title }}</h2>
+
+  {% endif %}
+
+  {% if data.subtitle != blank %}
+
+  <h3 class="text-manchet center-block text-body-lg mb-4">{{ data.subtitle }}</h3>
+
+  {% endif %}
+
+  {% if data.hideborder != true %}
+
+  <hr class="border-1.5 w-36 max-w-full my-6 border-primary bg-primary opacity-50" />
+
+  {% endif %}
+
+</div>

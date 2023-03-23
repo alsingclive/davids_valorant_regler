@@ -1,0 +1,26 @@
+{% block button %}
+  <div
+    class="col-span-full">
+
+
+    <button
+      type="{{button.type}}"
+      class="my-4 mt-8 {% if button.full == true %}w-full{% endif %} {% if button.variant == "solid" %} bg-blue-600 hover:bg-blue-500 group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 {% elsif button.variant == "outline" %} group inline-flex ring-1 ring-gray-300 hover:ring-white items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none {% endif %}">
+      {% if button.href %}
+        <a
+          class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2"
+          href="{{button.href}}">
+          <span
+            class="text-white">
+            {{ button.text }}
+          </span>
+        </a>
+      {% else %}
+        <span
+          class="">
+          {{ button.text }}
+        </span>
+      {% endif %}
+    </button>
+  </div>
+{% endblock %}

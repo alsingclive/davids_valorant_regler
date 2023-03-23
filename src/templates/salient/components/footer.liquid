@@ -1,0 +1,53 @@
+{% block footer %}
+
+  <footer
+    class="bg-slate-50">
+    <div
+      class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div
+        class="py-16">
+        <div
+          class="flex justify-center">
+          <a
+            href="{{data.logo.href}}"
+            aria-label="Home">
+            <img
+              class="h-10 w-auto"
+              src="{{data.logo.src}}"
+              alt="logo">
+          </a>
+        </div>
+
+        <nav
+          class="mt-10 text-sm"
+          aria-label="quick links">
+          <div
+            class="-my-1 flex justify-center gap-x-6">
+            {% for navlink in data.navigation.main %}
+              {% render '/templates/salient/components/navlink.liquid', navlink: navlink %}
+            {% endfor %}
+          </div>
+        </nav>
+      </div>
+      <div
+        class="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
+        <div
+          class="flex gap-x-6">
+          {% for navlink in data.navigation.social %}
+            {% render '/templates/salient/components/navlink.liquid', navlink: navlink %}
+          {% endfor %}
+        </div>
+        <p
+          class="mt-6 text-sm text-slate-500 sm:mt-0">
+          {{ data.navigation.copy.text }}
+          {{ "now" | date: "%Y" }}
+          {{ data.navigation.copy.name }}
+          {{ data.navigation.copy.detail }}
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+{% endblock %}

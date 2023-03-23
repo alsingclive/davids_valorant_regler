@@ -1,0 +1,101 @@
+{
+  "templateName": "/templates/pages/salient.liquid",
+  "routeTemplate": "/salient/register",
+  "active": true,
+  "data": {
+    "title": "Salient Register",
+    "elements": [
+      {
+        "template": "/templates/salient/pages/register.liquid",
+        "data": {
+          "bg_img": "/assets/bg/bg1.jpg",
+          "heading": {
+            "logo": {
+              "href": "/salient",
+              "src": "/assets/logo/logo1.svg"
+            },
+            "title": "Get started for free",
+            "subtitle": "Lots and lots of text",
+
+            "text": [
+              {
+                "text": ""
+              },
+              {
+                "start": "Already registered? ",
+                "link": "Sign in",
+                "href": "/salient",
+                "end": "to your account"
+              }
+            ]
+          },
+          "form": {
+            "fields": {
+              "input": [
+                {
+                  "id": "first-name",
+                  "name": "first-name",
+                  "label": "First Name",
+                  "type": "first-name",
+                  "autocomplete": "first-name",
+
+                  "required": true
+                },
+                {
+                  "id": "last-name",
+                  "name": "last-name",
+                  "label": "Last Name",
+                  "type": "last-name",
+                  "autocomplete": "last-name",
+
+                  "required": true
+                },
+                {
+                  "id": "email",
+                  "name": "email",
+                  "label": "Email address",
+                  "type": "email",
+                  "autocomplete": "email",
+                  "full": true,
+                  "required": true
+                },
+                {
+                  "id": "password",
+                  "name": "password",
+                  "label": "Password",
+                  "type": "password",
+                  "autocomplete": "password",
+                  "full": true,
+                  "required": true
+                }
+              ],
+              "select": [
+                {
+                  "id": "referral_source",
+                  "name": "referral_source",
+                  "label": "Where did you hear about us?",
+                  "type": "referral_source",
+                  "autocomplete": "referral_source",
+                  "full": true,
+                  "required": true,
+                  "options": [
+                    "AltaVista search",
+                    "Super Bowl commercial",
+                    "Our route 34 city bus ad",
+                    "The “Never Use This” podcast"
+                  ]
+                }
+              ]
+            },
+            "button": {
+              "type": "submit",
+              "text": "Submit",
+              "variant": "solid",
+              "full": true
+            }
+          }
+        }
+      }
+    ]
+  }
+}

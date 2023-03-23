@@ -1,0 +1,34 @@
+<div {% if id !=blank %} id="{{ id }}" {% endif %}
+  class="w-full flex flex-col items-center text-center py-12 {% if data.gray %} bg-gray-100 {% endif %}">
+
+  {% render "/templates/demo/components/demo-centered-header.liquid", data: data %}
+
+  <div class="reveal fade-bottom w-full max-w-screen-2xl mx-auto flex flex-col md:flex-row px-12 md:space-x-8">
+
+    {% for column in data.columns %}
+
+    <div class="basis-full mt-12 md:mt-6 text-center">
+
+      {% if column.icon != blank %}
+      <i class="material-symbols-outlined text-4xl" aria-hidden="true" role="img" data-icon="{{ column.icon }}"></i>
+      {% endif %}
+      {% if column.title != blank %}
+      <h3 class="text-xl py-2 font-bold">{{ column.title }}</h3>
+      {% endif %}
+      {% if column.text != blank %}
+      <p class="text-zinc-600 p-3 pb-6">{{ column.text }}</p>
+      {% endif %}
+
+      {% if column.link != blank %}
+      <a href="{{ column.link.href }}" title="{{ column.link.title }}"
+        class="block mt-3 transition-colors text-goldish-dark text-xl hover:text-goldish">{{ column.link.text }}
+      </a>
+
+      {% endif %}
+
+    </div>
+
+    {% endfor %}
+
+  </div>
+</div>

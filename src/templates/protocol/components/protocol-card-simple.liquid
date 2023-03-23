@@ -1,0 +1,19 @@
+<article class="mb-6 sm:mb-4 lg:mb-0 {{ align }}">
+  <h{{ parentData.heading.config.headingLevel | plus: 1 }} class="text-sm font-semibold text-white">
+    {{ data.title }}
+  </h{{ parentData.heading.config.headingLevel | plus: 1 }}>
+  <p class="mt-1 text-sm text-zinc-400">
+    {{ data.text }}
+  </p>
+
+  {% if data.link %}
+
+  <span class="block mt-4">
+
+    {% render "/templates/protocol/components/protocol-cta.liquid", data: data.link %}
+
+  </span>
+
+  {% endif %}
+
+</article>

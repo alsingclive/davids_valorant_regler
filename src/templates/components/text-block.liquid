@@ -1,0 +1,31 @@
+{% block section_centered_simple_text %}
+
+<div {% if id !=blank %} id="{{ id }}" {% endif %} class="{% if data.gray %} bg-gray-100" {% endif %}">
+    <div class="w-full max-w-screen-2xl mx-auto flex flex-col items-center text-center py-12 ">
+
+        <div class="flex flex-col items-center px-6">
+            {% if data.title != blank %}
+            <h2 class="text-3xl md:text-5xl font-extrabold font-serif my-4">{{ data.title }}</h2>
+            {% endif %}
+            {% if data.subtitle != blank %}
+            <h3 class="text-manchet center-block text-body-lg mb-4">{{ data.subtitle }}</h3>
+            {% endif %}
+            {% if data.hideborder != true %}
+            <hr class="border-1.5 w-36 max-w-full my-6 border-black bg-black opacity-50" />
+            {% endif %}
+        </div>
+
+        <div class="px-12 mt-2">
+            {% if data.text.first %}
+            {% for text in data.text %}
+            <p class="my-3">{{ text }}</p>
+            {% endfor %}
+            {% else if data.text != blank %}
+            <p>{{ data.text }}</p>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{
+  "templateName": "/templates/pages/designer.liquid",
+  "routeTemplate": "/designer",
+  "active": true,
+  "data": {
+    "title": "Welcome to your first page",
+    "elements": [
+      {
+        "template": "/templates/components/hero.liquid",
+        "data": {
+          "hero_image": "https://picsum.photos/3000/1500",
+          "title": "Cool hero",
+          "subtitle": "Even cooler subtitle",
+          "text": "Lots and lots of text"
+        }
+      },
+      {
+        "template": "/templates/components/text-block.liquid",
+        "data": {
+          "title": "Lorem ipsum",
+          "subtitle": "dolor sit amet, consectetur adipiscing elit",
+          "text": [
+            "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        }
+      }
+    ]
+  }
+}

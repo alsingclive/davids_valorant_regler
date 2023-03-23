@@ -1,0 +1,46 @@
+{% case data.prose.config.align %}
+
+{% when "left" %}
+{% assign textAlign = "text-left mr-auto" %}
+
+{% when "center" %}
+{% assign textAlign = "text-center mx-auto" %}
+
+{% when "right" %}
+{% assign textAlign = "text-right ml-auto" %}
+
+{% endcase %}
+
+<section class="my-16 md:my-32 px-6 max-w-7xl mx-auto">
+
+  {% if data.heading != blank %}
+
+  {% render "/templates/protocol/components/protocol-heading.liquid" data: data.heading %}
+
+  {% endif %}
+
+  <article class="flex flex-col max-w-2xl mt-2 {{ textAlign }} {% if data.prose.config.spacing == true %}gap-4{% endif %}">
+
+    {% for text in data.prose.text %}
+
+    <p class="text-zinc-400 leading-7">{{ text }}</p>
+
+    {% endfor %}
+
+    {% if data.links %}
+
+    <span class="mt-6 flex flex-row gap-x-8 gap-y-4 flex-wrap">
+
+      {% for item in data.links %}
+
+      {% render "/templates/protocol/components/protocol-cta.liquid" data: item %}
+
+      {% endfor %}
+
+    </span>
+
+    {% endif %}
+
+  </article>
+
+</section>

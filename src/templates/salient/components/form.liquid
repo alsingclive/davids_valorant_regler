@@ -1,0 +1,16 @@
+{% block form %}
+
+
+  <form
+    action="#"
+    class="mt-10 grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-2">
+    {% for input in form.fields.input %}
+      {% render '/templates/salient/components/input-field.liquid', field: input %}
+    {% endfor %}
+    {% for select in form.fields.select %}
+      {% render '/templates/salient/components/select-field.liquid', field: select %}
+    {% endfor %}
+    {% render '/templates/salient/components/button.liquid', button: form.button %}
+  </form>
+
+{% endblock %}
