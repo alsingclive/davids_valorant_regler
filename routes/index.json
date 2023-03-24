@@ -8,7 +8,7 @@
       {
         "template": "/templates/demo/components/demo-hero.liquid",
         "data": {
-          "scroll_ref": "#paragraf1",
+          "scroll_ref": "#oversigt",
           "links": [
             {
               "text": "Terms of Service",
@@ -92,7 +92,7 @@
           "links": [
             {
               "title": "Valg af Duelist Agent",
-              "text": "<br>1.1 Ved valg af Duelist agent i computerspillet Valorant er spilleren pålagt at opnå mindst 20 elimineringer under spillets varighed. <br> <br> 1.2 Såfremt spilleren vælger agenten Reyna specifikt, er spilleren pålagt at opnå mindst 25 eliminations under spillets varighed.",
+              "text": "<br>1.1 Ved valg af Duelist agent i computerspillet Valorant er spilleren pålagt at opnå mindst 20 elimineringer under spillets varighed. <br> <br> 1.2 Såfremt spilleren vælger agenten Reyna specifikt, er spilleren pålagt at opnå mindst 25 elimineringer under spillets varighed.",
               "chips": [
                 "Duelist paragraf"
               ],
