@@ -12,8 +12,9 @@
           {% endif %}
           {% for link in data.links %}
           <a target="_blank"
-            class="cursor-pointer mt-4 group w-full flex flex-row items-center justify-between rounded-2xl bg-zinc-500/5 hover:bg-zinc-500/10 transition-colors duration-300">
-            <div class="flex flex-col p-8">
+            class="shadow-md mt-4 group w-full flex flex-row items-center justify-between rounded-2xl bg-zinc-500/5 transition-colors duration-300">
+            <div class="flex flex-col p-8 ">
+
               <div class="flex flex-col md:flex-row items-start md:items-center justify-start">
                 <h3 class="text-xl md:text-2xl font-extrabold text-goldish">{{ link.title }}
                 </h3>
@@ -41,10 +42,20 @@
               <p class="">{{ link.text_2 }}
               </p>
             </div>
-          </a>
-          {% endfor %}
+
+            {% endfor %}
         </div>
+        <a href="#oversigt"
+          class="my-2 cursor-pointer end flex flex-row justify-center max-w-[220px] text-white rounded-full items-center px-9 py-3 md:mr-4 transition-colors bg-primary-dark hover:bg-primary">Tilbage
+          til oversigt</a>
+        </a>
       </div>
+      {% if data.subtitle != "Rang- og performance-regler" %}
+      <hr
+        class="block border-1 w-[1200px] h-[3px] max-w-xs my-3 md:my-6 border-transparent bg-red-500 md:border-goldish md:bg-goldish m-auto" />
+      {% endif %}
     </div>
+
   </div>
+
 </div>

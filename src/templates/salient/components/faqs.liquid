@@ -1,66 +1,48 @@
 {% block faqs %}
 
-  <section
-    id="{{data.id}}"
-    aria-labelledby="{{data.faq}}"
-    class="relative overflow-hidden bg-slate-50 py-20 sm:py-32">
+<section id="{{data.id}}" aria-labelledby="{{data.faq}}" class="relative overflow-hidden bg-slate-50 py-20 sm:py-32">
 
-    <img
-      class="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4"
-      src="{{data.bg_img}}"
-      alt="bg-img">
+  <img class="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4" src="{{data.bg_img}}"
+    alt="bg-img">
 
-    <div
-      class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div
-        class="mx-auto max-w-2xl lg:mx-0">
-        <h2
-          id="{{data.faq}}"
-          class="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-          {{ data.title }}
-        </h2>
-        <p
-          class="mt-4 text-lg tracking-tight text-slate-700">
-          {{ data.subtitle }}
-        </p>
-      </div>
-      <ul
-        role="list"
-        class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 id="{{data.faq}}" class="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+        {{ data.title }}
+      </h2>
+      <p class="mt-4 text-lg tracking-tight text-slate-700">
+        {{ data.subtitle }}
+      </p>
+    </div>
+    <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
 
-        {% for column in data.texts %}
+      {% for column in data.texts %}
 
-          {% assign columnIndex = 0 %}
-          <li
-            key={%increment columnIndex%}>
-            <ul
-              role="list"
-              class="flex flex-col gap-y-8">
+      {% assign columnIndex = 0 %}
+      <li key={%increment columnIndex%}>
+        <ul role="list" class="flex flex-col gap-y-8">
 
-              {% for faq in column %}
-                {% assign faqIndex = 0 %}
-                <li
-                  key={% increment faqIndex%}>
-                  <h3
-                    class="font-display text-lg leading-7 text-slate-900">
-                    {{ faq.question }}
-                  </h3>
-                  <p
-                    class="mt-4 text-sm text-slate-700">{{ faq.answer }}</p>
-                </li>
-
-
-              {% endfor %}
-
-            </ul>
+          {% for faq in column %}
+          {% assign faqIndex = 0 %}
+          <li key={% increment faqIndex%}>
+            <h3 class="font-display text-lg leading-7 text-slate-900">
+              {{ faq.question }}
+            </h3>
+            <p class="mt-4 text-sm text-slate-700">{{ faq.answer }}</p>
           </li>
 
-        {% endfor %}
+
+          {% endfor %}
+
+        </ul>
+      </li>
+
+      {% endfor %}
 
 
 
-      </ul>
-    </div>
-  </section>
+    </ul>
+  </div>
+</section>
 
 {% endblock %}

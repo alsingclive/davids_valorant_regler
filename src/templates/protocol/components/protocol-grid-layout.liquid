@@ -43,10 +43,12 @@
       {% case data.grid.config.type %}
 
       {% when "simple" %}
-      {% render "/templates/protocol/components/protocol-card-simple.liquid", data: item, parentData: data, align: align %}
+      {% render "/templates/protocol/components/protocol-card-simple.liquid", data: item, parentData: data, align: align
+      %}
 
       {% when "styled" %}
-      {% render "/templates/protocol/components/protocol-card-styled.liquid", data: item, parentData: data, align: align %}
+      {% render "/templates/protocol/components/protocol-card-styled.liquid", data: item, parentData: data, align: align
+      %}
 
       {% endcase %}
 

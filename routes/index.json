@@ -6,14 +6,19 @@
     "title": "Davids Valorant Regler",
     "elements": [
       {
-        "template": "/templates/demo/components/demo-hero-half.liquid",
+        "template": "/templates/demo/components/demo-hero.liquid",
         "data": {
           "scroll_ref": "#paragraf1",
           "links": [
             {
-              "text": "Regler",
-              "href": "#paragraf1",
-              "icon": "expand_more"
+              "text": "Terms of Service",
+              "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+              "icon": "open_in_new"
+            },
+            {
+              "text": "Oversigt",
+              "href": "#oversigt",
+              "icon": "arrow_downward"
             }
           ],
           "hero_image": "/assets/bg/valorant.jpg",
@@ -23,9 +28,66 @@
         }
       },
       {
+        "template": "/templates/demo/components/demo-large-links.liquid",
+        "data": {
+          "title": "Paragraffer oversigt",
+          "links": [
+            {
+              "title": "§ Paragraf 1",
+              "text": "Valg af Duelist Agent",
+              "href": "#paragraf1",
+              "chips": [
+                "Duelist Paragraf"
+              ]
+            },
+            {
+              "title": "§ Paragraf 2",
+              "text": "Regler Angående Duelist",
+              "href": "#paragraf2",
+              "chips": [
+                "DUELIST PARAGRAF"
+              ]
+            },
+            {
+              "title": "§ Paragraf 3",
+              "text": "Regler Angående Clutch-situationer",
+              "href": "#paragraf3",
+              "chips": [
+                "CLUTCH PARAGRAF"
+              ]
+            },
+            {
+              "title": "§ Paragraf 4",
+              "text": "Regler Angående Line-ups",
+              "href": "#paragraf4",
+              "chips": [
+                "LINE-UP PARAGRAF"
+              ]
+            },
+            {
+              "title": "§ Paragraf 5",
+              "text": "Regler Angående spiken",
+              "href": "#paragraf5",
+              "chips": [
+                "SAGE PARAGRAF"
+              ]
+            },
+            {
+              "title": "§ Paragraf 6",
+              "text": "Rang- og performance-regler",
+              "href": "#paragraf6",
+              "chips": [
+                "PERFORMANCE PARAGRAF"
+              ]
+            }
+          ]
+        },
+        "id": "oversigt"
+      },
+      {
         "template": "/templates/demo/components/paragraffer.liquid",
         "data": {
-          "title": "Paragraf 1",
+          "title": "§ Paragraf 1",
           "subtitle": "Regler Angående Duelist",
           "links": [
             {
@@ -35,32 +97,128 @@
                 "Duelist paragraf"
               ],
               "title_2": "Konsekvenser af overtrædelse af reglen",
-              "text_2": " <br>2.1 Overtrædelse af paragraf 1.1 og 1.2 kan resultere i tab af spillets runde eller en form for straf, som fastsat af de spillere, der er berørt af overtrædelsen.<br><br>2.2 Gentagne overtrædelser af reglen kan føre til yderligere sanktioner, herunder men ikke begrænset til suspendering af spillerens ret til at vælge Duelist eller Reyna i fremtidige spil."
+              "text_2": " <br>1.3 Overtrædelse af § paragraf 1.1 og 1.2 kan resultere i straf, som fastsat af de spillere, der er berørt af overtrædelsen.<br><br>1.4 Gentagne overtrædelser af reglen kan føre til yderligere sanktioner, herunder men ikke begrænset til suspendering af spillerens ret til at vælge Duelist eller Reyna i fremtidige spil."
             }
           ],
-          "text": "Især N og Chrillo skal kigge med her"
+          "text": ""
         },
         "id": "paragraf1"
       },
       {
         "template": "/templates/demo/components/paragraffer.liquid",
         "data": {
-          "title": "Paragraf 2",
+          "title": "§ Paragraf 2",
           "subtitle": "Regler Angående Duelist",
           "links": [
             {
               "title": "Valg af Duelist Agent",
-              "text": "<br>1.1 Ved valg af Duelist agent i computerspillet Valorant er spilleren pålagt at opnå mindst 20 elimineringer under spillets varighed. <br> <br> 1.2 Såfremt spilleren vælger agenten Reyna specifikt, er spilleren pålagt at opnå mindst 25 eliminations under spillets varighed.",
+              "text": "<br>2.1 Ved starten af hver runde i computerspillet Valorant skal Duelist agenten som udgangspunkt være den første spiller, der bevæger sig ind på spillets site.<br><br>2.2 Der kan dog forekomme passende undtagelser for denne regel, hvor andre agenter kan bevæge sig ind på site før Duelist agenten. <br><br>2.3 Passende undtagelser kan omfatte men er ikke begrænset til at angribe en fjendtlig position, udføre taktisk manipulation eller strategisk støtte til holdet.",
               "chips": [
                 "Duelist paragraf"
               ],
               "title_2": "Konsekvenser af overtrædelse af reglen",
-              "text_2": " <br>2.1 Overtrædelse af paragraf 1.1 og 1.2 kan resultere i tab af spillets runde eller en form for straf, som fastsat af de spillere, der er berørt af overtrædelsen.<br><br>2.2 Gentagne overtrædelser af reglen kan føre til yderligere sanktioner, herunder men ikke begrænset til suspendering af spillerens ret til at vælge Duelist eller Reyna i fremtidige spil."
+              "text_2": " <br>2.3 Overtrædelse af § paragraf 1.1 vil medføre, at den overtrædende spiller skal donere en 'Sheriff' til en vilkårlig spiller i den følgende runde.<br><br>2.4 Gentagne overtrædelser af reglen kan føre til yderligere sanktioner, herunder men ikke begrænset til suspendering af spillerens ret til at vælge Duelist inklusiv Reyna i fremtidige spil."
             }
           ],
-          "text": "Især N og Chrillo skal kigge med her"
+          "text": ""
         },
-        "id": "paragraf1"
+        "id": "paragraf2"
+      },
+      {
+        "template": "/templates/demo/components/paragraffer.liquid",
+        "data": {
+          "title": "§ Paragraf 3",
+          "subtitle": "Regler Angående Clutch-situationer",
+          "links": [
+            {
+              "title": "Clutch-situationer og krav til stilhed",
+              "text": "<br>3.1 Når en spiller i computerspillet Valorant er ved at 'clutche' - dvs. er den eneste spiller på holdet tilbage mod modstanderens hold og formår at eliminere alle modstanderne og vinde runden - skal alle andre spillere i holdets Discord-opkald være stille og ikke tale, medmindre de kan give 'vital information' til den clutchende spiller.<br><br>3.2 Vital information kan defineres som information, som den clutchende spiller ikke selv har set eller opfanget, og som kan hjælpe spilleren med at vinde runden.<br><br>3.3 Hvis en spiller overtræder kravet om stilhed i en clutch-situation, vil det blive betragtet som en overtrædelse af denne regel.",
+              "chips": [
+                "Clutch paragraf"
+              ],
+              "title_2": "Konsekvenser af overtrædelse af reglen",
+              "text_2": " <br>4.1 Overtrædelse af kravet om stilhed i en clutch-situation kan resultere i tab af drop-privilegier eller agent-privilegier.<br><br>4.2 Hvilke privilegier, der vil blive frataget, vil afhænge af alvoren af overtrædelsen, og afgøres af de øvrige spillere i holdet. <br><br> 4.3 Gentagne overtrædelser af reglen kan føre til yderligere sanktioner, som fastsat af de spillere, der er berørt af overtrædelsen."
+            }
+          ],
+          "text": ""
+        },
+        "id": "paragraf3"
+      },
+      {
+        "template": "/templates/demo/components/paragraffer.liquid",
+        "data": {
+          "title": "§ Paragraf 4",
+          "subtitle": "Regler Angående Line-ups",
+          "links": [
+            {
+              "title": "Krav til succesrate for Line-ups",
+              "text": "<br>4.1 Agenter i computerspillet Valorant, der er i stand til at udføre 'line-ups' - dvs. strategiske kast af deres evner på bestemte steder på kortet, såsom Viper, Killjoy, KAY/O osv. - skal have en succesrate på mindst 75% i deres line-ups i alle spil.<br><br>4.2 Hvis en spiller ikke kan opretholde en succesrate på mindst 75% i deres line-ups på grund af at blive skudt eller forstyrret af en modstander, har spilleren ikke overtrådt denne regel. Dette bliver evalueret og bestemt af de andre spillere på holdet",
+              "chips": [
+                "Line-up paragraf"
+              ],
+              "title_2": "Konsekvenser af overtrædelse af reglen",
+              "text_2": " <br> 4.3 Hvis en spiller gentagne gange overtræder denne regel, vil de øvrige spillere i holdet fastsætte passende sanktioner, som kan omfatte yderligere træning eller suspension af spillerens ret til at spille som en 'line-up' agent i fremtidige spil."
+            }
+          ],
+          "text": ""
+        },
+        "id": "paragraf4"
+      },
+      {
+        "template": "/templates/demo/components/paragraffer.liquid",
+        "data": {
+          "title": "§ Paragraf 5",
+          "subtitle": "Regler Angående spiken",
+          "links": [
+            {
+              "title": "Krav til at Sage ofte skal have spiken",
+              "text": "<br>5.1 Ved starten af 'attacking' runder i computerspillet Valorant, skal Sage agenten normalt have 'spiken' - dvs. objektet, som skal plantes for at vinde runden. Dog kan der være visse undtagelser, f.eks. hvis Killjoy har ult, eller hvis holdet har en anden specifik strategi, der kræver en anden spiller at bære 'spiken'.<br><br>5.2 Hvis Sage topfragger i spillet, kan han/hun vælge at give 'spiken' til en anden spiller i holdet. <br><br> 5.3 Hvis Gekko er med skal Sage ikke have bomben fordi man picker kun Gekko for at kunne plante med Wingman. Han kan ikke andet.",
+              "chips": [
+                "Sage paragraf"
+              ],
+              "title_2": "Konsekvenser af overtrædelse af reglen",
+              "text_2": " <br> 5.3 Overtrædelse af denne regel vil blive betragtet som en overtrædelse af holdets strategi og kan resultere i yderligere sanktioner fastsat af de øvrige spillere i holdet."
+            }
+          ],
+          "text": ""
+        },
+        "id": "paragraf5"
+      },
+      {
+        "template": "/templates/demo/components/paragraffer.liquid",
+        "data": {
+          "title": "§ Paragraf 6",
+          "subtitle": "Rang- og performance-regler",
+          "links": [
+            {
+              "title": "Krav til deranking og performance",
+              "text": "<br>6.1 Hvis en spiller deranker og efterfølgende ranker op igen, vil spilleren ikke længere blive betragtet som deranket.<br><br>6.2 Antallet af kills, som en spiller skal have i et computerspil Valorant, vil blive fastsat på baggrund af antallet af kills, som den spiller med højest rang i lobbyen har. Spillere, der har en lavere rang end den spiller med højest rang i lobbyen, kan trække 2 kills fra det fastsatte krav per rang, de er lavere end den spiller med højest rang.",
+              "chips": [
+                "Performance paragraf"
+              ],
+              "title_2": "Konsekvenser af overtrædelse af reglen",
+              "text_2": " <br>6.3 Overtrædelse af disse regler vil blive betragtet som en overtrædelse af holdets rang- og performance-regler og kan resultere i yderligere sanktioner fastsat af de øvrige spillere i holdet."
+            }
+          ],
+          "text": ""
+        },
+        "id": "paragraf6"
+      },
+      {
+        "template": "/templates/demo/components/demo-footer.liquid",
+        "data": {
+          "image": "/assets/bg/valorant_footer.jpg",
+          "title": "Davids Valorant Regler",
+          "subtitle": "Som han har fået direkte fra Gandhi",
+          "links": [
+            {
+              "text": "Tilbage",
+              "icon": "arrow_upward",
+              "href": "#oversigt"
+            }
+          ]
+        },
+        "id": "footer"
       }
     ]
   }

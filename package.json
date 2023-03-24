@@ -7,7 +7,7 @@
     "tailwindcss": "^3.2.7"
   },
   "devDependencies": {
-    "@togafy/cli": "^0.0.35",
+    "@togafy/cli": "^0.0.37",
     "@types/node": "^18.11.9",
     "chokidar": "^3.5.3",
     "concurrently": "^7.5.0",
