@@ -6,6 +6,25 @@
     "title": "Davids Valorant Regler",
     "elements": [
       {
+        "template": "/templates/protocol/components/valorant_custom_header.liquid",
+        "data": {
+          "logo": {
+            "text": "Logo",
+            "href": "/"
+          },
+          "navigation": [
+            {
+              "text": "Oversigt",
+              "href": "#oversigt",
+              "target": ""
+            }
+          ],
+          "config": {
+            "sticky": true
+          }
+        }
+      },
+      {
         "template": "/templates/demo/components/demo-hero.liquid",
         "data": {
           "scroll_ref": "#oversigt",

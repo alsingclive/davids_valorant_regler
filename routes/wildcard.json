@@ -16,12 +16,12 @@
                 "href": "/salient"
             },
             {
-              "title": "Protocol",
-              "href": "/protocol"
+                "title": "Protocol",
+                "href": "/protocol"
             },
             {
-              "title": "Demo",
-              "href": "/demo"
+                "title": "Demo",
+                "href": "/demo"
             }
         ]
     }
