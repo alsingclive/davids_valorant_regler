@@ -3,13 +3,13 @@
   "routeTemplate": "/",
   "active": true,
   "data": {
-    "title": "Davids Valorant Regler",
+    "title": "Gandhis Valorant Regler",
     "elements": [
       {
         "template": "/templates/protocol/components/valorant_custom_header.liquid",
         "data": {
           "logo": {
-            "text": "Logo",
+            "text": "",
             "href": "/"
           },
           "navigation": [
@@ -41,7 +41,7 @@
             }
           ],
           "hero_image": "/assets/bg/valorant.jpg",
-          "title": "Davids Valorant Regler",
+          "title": "Gandhis Valorant Regler",
           "subtitle": "Disse regler er ikke til diskussion. De er lov!",
           "text": "Lavet af alsingclive"
         }
@@ -227,8 +227,8 @@
         "template": "/templates/demo/components/demo-footer.liquid",
         "data": {
           "image": "/assets/bg/valorant_footer.jpg",
-          "title": "Davids Valorant Regler",
-          "subtitle": "Som han har fået direkte fra Gandhi",
+          "title": "Gandhis Valorant Regler",
+          "subtitle": "",
           "links": [
             {
               "text": "Tilbage",
