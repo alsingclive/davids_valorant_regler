@@ -1,0 +1,45 @@
+{
+  "templateName": "/templates/pages/dynamic.liquid",
+  "routeTemplate": "/killculator",
+  "active": true,
+  "data": {
+    "title": "Gandhis Valorant Regler",
+    "elements": [
+      {
+        "template": "/templates/protocol/components/valorant_custom_header.liquid",
+        "data": {
+          "logo": {
+            "text": "",
+            "href": "/"
+          },
+          "navigation": [
+            {
+              "text": "Oversigt",
+              "href": "/#oversigt",
+              "target": ""
+            }
+          ],
+          "config": {
+            "sticky": true
+          }
+        }
+      },
+      {
+        "template": "/templates/Custom-Components/thinHeader.liquid",
+        "data": {
+          "id": "call-to-action",
+          "bg_img": "/assets/bg/killculator_bg.jpg",
+          "title": "Killculator",
+          "text": [
+            "Udregn hvor mange kills du skal have"
+          ]
+        }
+      },
+      {
+        "template": "/templates/Custom-Components/killculator.liquid",
+        "data": {},
+        "id": "killculator"
+      }
+    ]
+  }
+}

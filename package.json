@@ -24,6 +24,7 @@
   "scripts": {
     "build": "npm run clean && npm run webpack-build && npm run src-files-build && npm run tailwind-build",
     "watch": "npm run clean && concurrently \"npm:tailwind-watch\" \"npm:server\" \"npm:webpack-watch\" \"npm:src-files-watch\"",
+    "publish": "npm run build && togafy commit create && togafy content upload && togafy commit publish",
     "webpack-build": "webpack --config webpack.prod.js",
     "webpack-watch": "webpack --config webpack.dev.js",
     "tailwind-build": "npx tailwindcss -i ./src/theme.css -o ./build/theme.css --minify",

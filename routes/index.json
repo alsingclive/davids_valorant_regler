@@ -17,6 +17,11 @@
               "text": "Oversigt",
               "href": "#oversigt",
               "target": ""
+            },
+            {
+              "text": "Killculator",
+              "href": "/killculator",
+              "target": "/killculator"
             }
           ],
           "config": {
