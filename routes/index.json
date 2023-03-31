@@ -119,42 +119,42 @@
               "href": "#paragraf1",
               "text": "Paragraf 1",
               "selected": "",
-              "ref": "01",
+              "ref": "01 - Duelist",
               "id": "paragraf1"
             },
             {
               "href": "#paragraf2",
               "text": "Paragraf 2",
               "selected": "",
-              "ref": "02",
+              "ref": "02 - Duelist",
               "id": "paragraf2"
             },
             {
               "href": "#paragraf3",
               "text": "Paragraf 3",
               "selected": "true",
-              "ref": "03",
+              "ref": "03 - Clutch Situationer",
               "id": "paragraf3"
             },
             {
               "href": "#paragraf4",
               "text": "Paragraf 4",
               "selected": "",
-              "ref": "04",
+              "ref": "04 - Line-ups",
               "id": "paragraf4"
             },
             {
               "href": "#paragraf5",
               "text": "Paragraf 5",
               "selected": "",
-              "ref": "05",
+              "ref": "05 - Spiken",
               "id": "paragraf5"
             },
             {
               "href": "#paragraf6",
               "text": "Paragraf 6",
               "selected": "",
-              "ref": "06",
+              "ref": "06 - Performance",
               "id": "paragraf6"
             }
           ]
