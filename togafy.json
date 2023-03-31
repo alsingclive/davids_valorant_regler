@@ -1,0 +1,9 @@
+{
+    "websiteId": "371907ea-ffbf-4c5b-9046-ae5c54cfaf41",
+    "content": {
+        "folder": "build"
+    },
+    "routes": {
+        "folder": "routes"
+    }
+}
