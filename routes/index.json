@@ -6,7 +6,7 @@
     "title": "Gandhis Valorant Regler",
     "elements": [
       {
-        "template": "/templates/protocol/components/valorant_custom_header.liquid",
+        "template": "/templates/Custom-Components/valorant_custom_header.liquid",
         "data": {
           "logo": {
             "text": "",
@@ -14,14 +14,16 @@
           },
           "navigation": [
             {
-              "text": "Oversigt",
-              "href": "#oversigt",
-              "target": ""
-            },
-            {
               "text": "Killculator",
               "href": "/killculator",
-              "target": "/killculator"
+              "target": "/killculator",
+              "icon": "calculate"
+            },
+            {
+              "text": "Oversigt",
+              "href": "#oversigt",
+              "target": "",
+              "icon": "first_page"
             }
           ],
           "config": {
@@ -109,7 +111,7 @@
         "id": "oversigt"
       },
       {
-        "template": "/templates/demo/components/paragraffer.liquid",
+        "template": "/templates/Custom-Components/paragraffer.liquid",
         "data": {
           "title": "§ Paragraf 1",
           "subtitle": "Regler Angående Duelist",
@@ -129,7 +131,7 @@
         "id": "paragraf1"
       },
       {
-        "template": "/templates/demo/components/paragraffer.liquid",
+        "template": "/templates/Custom-Components/paragraffer.liquid",
         "data": {
           "title": "§ Paragraf 2",
           "subtitle": "Regler Angående Duelist",
@@ -149,7 +151,7 @@
         "id": "paragraf2"
       },
       {
-        "template": "/templates/demo/components/paragraffer.liquid",
+        "template": "/templates/Custom-Components/paragraffer.liquid",
         "data": {
           "title": "§ Paragraf 3",
           "subtitle": "Regler Angående Clutch-situationer",
@@ -169,7 +171,7 @@
         "id": "paragraf3"
       },
       {
-        "template": "/templates/demo/components/paragraffer.liquid",
+        "template": "/templates/Custom-Components/paragraffer.liquid",
         "data": {
           "title": "§ Paragraf 4",
           "subtitle": "Regler Angående Line-ups",
@@ -189,7 +191,7 @@
         "id": "paragraf4"
       },
       {
-        "template": "/templates/demo/components/paragraffer.liquid",
+        "template": "/templates/Custom-Components/paragraffer.liquid",
         "data": {
           "title": "§ Paragraf 5",
           "subtitle": "Regler Angående spiken",
@@ -209,7 +211,7 @@
         "id": "paragraf5"
       },
       {
-        "template": "/templates/demo/components/paragraffer.liquid",
+        "template": "/templates/Custom-Components/paragraffer.liquid",
         "data": {
           "title": "§ Paragraf 6",
           "subtitle": "Rang- og performance-regler",

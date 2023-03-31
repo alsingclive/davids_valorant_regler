@@ -6,7 +6,7 @@
     "title": "Gandhis Valorant Regler",
     "elements": [
       {
-        "template": "/templates/protocol/components/valorant_custom_header.liquid",
+        "template": "/templates/Custom-Components/valorant_custom_header.liquid",
         "data": {
           "logo": {
             "text": "",
@@ -16,7 +16,8 @@
             {
               "text": "Oversigt",
               "href": "/#oversigt",
-              "target": ""
+              "target": "",
+              "icon": "first_page"
             }
           ],
           "config": {
@@ -25,20 +26,64 @@
         }
       },
       {
-        "template": "/templates/Custom-Components/thinHeader.liquid",
+        "template": "/templates/Custom-Components/custom-half_hero.liquid",
         "data": {
-          "id": "call-to-action",
-          "bg_img": "/assets/bg/killculator_bg.jpg",
+          "scroll_ref": "#k",
+          "links": [
+            {
+              "text": "Killculator",
+              "href": "#k",
+              "icon": "calculate"
+            },
+            {
+              "text": "Oversigt",
+              "href": "/#oversigt",
+              "icon": "first_page"
+            }
+          ],
+          "hero_image": "/assets/bg/killculator_bg.jpg",
           "title": "Killculator",
-          "text": [
-            "Udregn hvor mange kills du skal have"
-          ]
+          "subtitle": "",
+          "text": "Udregn hvor mange kills du skal have i forhold til § Paragraf 6"
         }
       },
       {
         "template": "/templates/Custom-Components/killculator.liquid",
         "data": {},
-        "id": "killculator"
+        "id": "k"
+      },
+      {
+        "template": "/templates/demo/components/demo-quote-person.liquid",
+        "data": {
+          "gray": true,
+          "title": "Alexander Skjødt",
+          "quote_first": true,
+          "subtitle": "Selv-proklameret duelist main",
+          "image": "/assets/bg/alexander_quote.jpg",
+          "image_text": "",
+          "quote": [
+            "Jeg har altid mange kills, jeg fucking carrier jer. Frederik laver kun low-impact frags fucking noob",
+            "(N når han bliver kritiseret for at jage eco frags)"
+          ],
+          "author": "- Mr. N"
+        },
+        "id": "quote_person"
+      },
+      {
+        "template": "/templates/demo/components/demo-footer.liquid",
+        "data": {
+          "image": "/assets/bg/valorant_footer.jpg",
+          "title": "Gandhis Valorant Regler",
+          "subtitle": "",
+          "links": [
+            {
+              "text": "Tilbage",
+              "icon": "arrow_upward",
+              "href": "/"
+            }
+          ]
+        },
+        "id": "footer"
       }
     ]
   }

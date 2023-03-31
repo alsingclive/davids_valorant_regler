@@ -15,8 +15,11 @@
       <ul role="list" class="flex items-center gap-8">
         {% for item in data.navigation %}
         <a href="{{ item.href }}" {% if item.target=="_blank" %}target="_blank" {% endif %}
-          class="text-xl leading-5 transition text-rose-700 hover:text-red-700">{{ item.text
-          }}</a> {% endfor %}
+          class="text-xl leading-5 transition text-rose-700 hover:text-red-900 flex items-center">
+          <i class="material-symbols-outlined text-rose-700 text-2xl mr-1" aria-hidden="true" role="img"
+            data-icon="{{ item.icon }}"></i>{{ item.text }}
+        </a>
+        {% endfor %}
 
       </ul>
     </nav>

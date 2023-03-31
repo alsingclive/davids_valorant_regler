@@ -3,7 +3,8 @@
 {% block killculator %}
 
 
-<div class="flex items-center justify-center mx-auto p-12 w-[300px]">
+<div {% if id !=blank %}id="{{ id }}" {% endif %}
+    class="flex items-center justify-center mx-auto p-12 w-[100%] h-[38rem] bg-gray-100 ">
     <div class="dropdown mx-10">
         <p class="text-center py-5 text-3xl text ">Den højeste rank</p>
         <span class="rounded-md shadow-sm">
@@ -185,8 +186,9 @@
 
 </div>
 
-<div class="px-7 mx-auto shadow-current text-4xl">
-    <p id="output" class="rounded border border-1 border-goldish/30 my-1 md:my-0 md:ml-4 p-10 shadow-md">Du skal have 42
+<div class="px-7 mx-auto shadow-current text-4xl -mt-16  ">
+    <p id="output" class="rounded border bg-white border-1 border-goldish/30 my-1 md:my-0 md:ml-4 p-10 shadow-md">Du
+        skal have 42
         mindre kills end højeste rank
     </p>
 </div>
