@@ -111,6 +111,56 @@
         "id": "oversigt"
       },
       {
+        "template": "/templates/primer/components/navigation.liquid",
+        "data": {
+          "id": "navigation",
+          "navigation": [
+            {
+              "href": "#paragraf1",
+              "text": "Paragraf 1",
+              "selected": "",
+              "ref": "01",
+              "id": "paragraf1"
+            },
+            {
+              "href": "#paragraf2",
+              "text": "Paragraf 2",
+              "selected": "",
+              "ref": "02",
+              "id": "paragraf2"
+            },
+            {
+              "href": "#paragraf3",
+              "text": "Paragraf 3",
+              "selected": "true",
+              "ref": "03",
+              "id": "paragraf3"
+            },
+            {
+              "href": "#paragraf4",
+              "text": "Paragraf 4",
+              "selected": "",
+              "ref": "04",
+              "id": "paragraf4"
+            },
+            {
+              "href": "#paragraf5",
+              "text": "Paragraf 5",
+              "selected": "",
+              "ref": "05",
+              "id": "paragraf5"
+            },
+            {
+              "href": "#paragraf6",
+              "text": "Paragraf 6",
+              "selected": "",
+              "ref": "05",
+              "id": "paragraf6"
+            }
+          ]
+        }
+      },
+      {
         "template": "/templates/Custom-Components/paragraffer.liquid",
         "data": {
           "title": "§ Paragraf 1",

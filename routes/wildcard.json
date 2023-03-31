@@ -24,6 +24,14 @@
                 "href": "/demo"
             },
             {
+                "title": "Spotlight",
+                "href": "/spotlight"
+            },
+            {
+                "title": "Primer",
+                "href": "/primer"
+            },
+            {
                 "title": "killculator",
                 "href": "/killculator"
             }

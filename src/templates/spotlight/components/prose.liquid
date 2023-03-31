@@ -1,0 +1,13 @@
+{% block prose %}
+
+  <div class="mt-8 prose dark:prose-invert">
+    {% for text in data.text %}
+      <p>
+        {{ text }}
+      </p>
+    {% endfor %}
+
+  </div>
+
+
+{% endblock %}

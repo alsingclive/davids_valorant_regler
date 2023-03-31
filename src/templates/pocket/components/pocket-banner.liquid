@@ -1,0 +1,21 @@
+<section {% if data.id !=blank %}id="{{ data.id }}" {% endif %} class="relative overflow-hidden bg-zinc-900 py-20 sm:py-28">
+  <div class="absolute top-1/2 -left-48 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
+    <div data-circle-background
+      class="h-[512px] w-[512px] rounded-full after:content-[''] after:h-[508px] after:w-[508px] after:absolute after:bg-zinc-900 after:rounded-full after:inset-0.5">
+    </div>
+  </div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-md sm:text-center">
+      <h2 class="text-4xl font-medium tracking-tight text-zinc-100 sm:text-4xl">{{ data.title }}</h2>
+
+      {% for text in data.text %}
+      <p class="mt-4 text-lg text-zinc-300">{{ text }}</p>
+      {% endfor %}
+
+      <div class="mt-8">
+        {% render "/templates/pocket/components/pocket-cta.liquid", data: data.link %}
+      </div>
+
+    </div>
+  </div>
+</section>

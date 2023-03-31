@@ -1,0 +1,94 @@
+<div class="grid grid-cols-12 items-center gap-8 lg:gap-16 xl:gap-24">
+  <div class="order-last col-span-12 md:col-span-6">
+    <ul class="relative flex flex-row md:flex-col gap-y-6 z-10">
+
+      {% assign filterIndex = 0 %}
+      {% for item in data.features %}
+
+      <li class="relative rounded-2xl transition-colors hover:bg-zinc-800/30 flex-1 md:flex-auto">
+        <div data-filter-index="{% increment filterIndex %}"
+          class="relative flex flex-col items-center md:items-start transition-colors z-10 p-4 md:p-8 cursor-pointer rounded-t-2xl md:rounded-2xl h-full">
+
+          {% if item.icon != blank %}
+          <i class="material-symbols-outlined h-12 w-12 text-4xl transition-colors text-zinc-100 text-center leading-snug" aria-hidden="true" role="img"
+            data-icon="{{ item.icon }}"></i>
+          {% endif %}
+          <div class="hidden md:block">
+            <h3 class="mt-4 text-xl font-semibold text-zinc-100">{{ item.title }}</h3>
+            <p class="mt-2 text-md text-zinc-400">{{ item.description }}</p>
+            <span class="absolute inset-0 rounded-2xl"></span>
+          </div>
+        </div>
+      </li>
+
+      {% endfor %}
+
+    </ul>
+    <ul class="relative grid md:hidden -mt-4 bg-zinc-800 rounded-2xl">
+
+      {% assign textIndex = 0 %}
+      {% for item in data.features %}
+
+      <li class="relative p-6 col-start-1 row-start-1">
+        <div data-text-index="{% increment textIndex %}" aria-hidden="true" class="relative transition-opacity opacity-0">
+          <h3 class="text-xl font-semibold text-zinc-100">{{ item.title }}</h3>
+          <p class="mt-2 text-md text-zinc-400">{{ item.description }}</p>
+          <span class="absolute inset-0 rounded-2xl"></span>
+        </div>
+      </li>
+
+      {% endfor %}
+
+    </ul>
+  </div>
+  <div class="relative col-span-12 md:col-span-6">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div data-circle-background
+        class="h-[512px] w-[512px] rounded-full after:content-[''] after:h-[508px] after:w-[508px] after:absolute after:bg-zinc-900 after:rounded-full after:inset-0.5">
+      </div>
+    </div>
+    <div class="aspect-[366/729] relative mx-auto w-full max-w-[366px]">
+      <div class="absolute inset-y-[calc(1/729*100%)] right-[calc(5/729*100%)] left-[calc(7/729*100%)] rounded-[calc(58/366*100%)/calc(58/729*100%)] shadow-2xl"></div>
+      <ul
+        class="absolute top-[calc(23/729*100%)] left-[calc(23/366*100%)] grid h-[calc(686/729*100%)] w-[calc(318/366*100%)] transform grid-cols-1 overflow-hidden bg-zinc-900 pt-[calc(23/318*100%)] pointer-events-none">
+
+        {% assign slideIndex = 0 %}
+        {% for item in data.features %}
+
+        <li data-slide-index="{% increment slideIndex %}" aria-hidden="true" class="col-start-1 row-start-1 flex flex-col w-full">
+          <div class="flex justify-between px-4 pt-4 items-center">
+            <i class="material-symbols-outlined h-8 w-8 text-2xl text-zinc-100 text-center" aria-hidden="true" role="img" data-icon="person"></i>
+            <p class="text-zinc-100 font-medium">{{ data.screenApp }}</p>
+            <i class="material-symbols-outlined h-8 w-8 text-2xl text-zinc-100 text-center" aria-hidden="true" role="img" data-icon="menu"></i>
+          </div>
+          <div data-screen-header class="px-4 mt-6 transition-opacity duration-500 opacity-0">
+            <p class="text-2xl text-zinc-100">{{ item.screen.title }}</p>
+            <p class="text-md mt-1">
+
+              {% for subtitle in item.screen.subtitle %}
+
+              {% if subtitle.text %}<span class="text-zinc-500">{{ subtitle.text }}</span>{% endif %}
+              {% if subtitle.emphasis %}<span class="text-primary">{{ subtitle.emphasis }}</span>{% endif %}
+
+              {% endfor %}
+
+            </p>
+          </div>
+          <div data-screen-body class="mt-6 flex-auto rounded-t-2xl bg-white p-4 transition-all duration-700 translate-y-full">
+            <img src="{{ item.screen.body.image }}" alt="{{ item.screen.body.title }}" class="object-cover rounded-lg aspect-[4/3] w-full">
+            <p class="text-lg font-semibold mt-4">{{ item.screen.body.title }}</p>
+
+            {% for text in item.screen.body.text %}
+            <p class="mt-2 text-sm">{{ text }}</p>
+            {% endfor %}
+
+          </div>
+        </li>
+
+        {% endfor %}
+
+      </ul>
+      <img src="/templates/pocket/assets/phone-frame.svg" alt="mobile phone" class="pointer-events-none absolute inset-0 h-full w-full">
+    </div>
+  </div>
+</div>

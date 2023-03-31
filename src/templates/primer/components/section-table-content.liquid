@@ -1,0 +1,61 @@
+{% script "/templates/primer/components/table-content.js", location: "footer", async %}
+
+
+  {% block section-table-content %}
+
+    <section
+      id="{{data.id}}"
+      aria-labelledby="{{data.id}}-title"
+      class="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32">
+
+      {% render '/templates/primer/components/section-heading.liquid', data: data %}
+
+      <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:max-w-4xl lg:px-12">
+
+
+        <ol role="list" class="mt-16 space-y-10 sm:space-y-16">
+
+
+
+          {% for section in data.content limit: 2 %}
+            <li>
+              <h3 class="font-display text-3xl font-bold tracking-tight text-slate-900">{{ section.title }}</h3>
+              <ol role="list" class="mt-8 divide-y divide-slate-300/30 rounded-2xl bg-slate-50 px-6 py-3 text-base tracking-tight sm:px-8 sm:py-7">
+                {% for item in section.list %}
+                  <li class="flex justify-between py-3">
+                    <span class="font-medium text-slate-900" aria-hidden="true">{{ item.title }}</span>
+                    <span class="font-mono text-slate-400" aria-hidden="true">{{ item.ref }}</span>
+                  </li>
+                {% endfor %}
+              </ol>
+            </li>
+          {% endfor %}
+
+
+          <div id="table-content-reveal-button" class="mt-10 flex justify-center">
+            <button type="button" class="flex items-center text-base font-medium tracking-tight text-slate-900 hover:text-slate-700">{{ data.button.text }}
+          </button>
+        </div>
+
+
+        {% for section in data.content offset: 2 %}
+          <li class="offset-table-content-item hidden">
+            <h3 class="font-display text-3xl font-bold tracking-tight text-slate-900">{{ section.title }}</h3>
+            <ol role="list" class="mt-8 divide-y divide-slate-300/30 rounded-2xl bg-slate-50 px-6 py-3 text-base tracking-tight sm:px-8 sm:py-7">
+              {% for item in section.list %}
+                <li class="flex justify-between py-3">
+                  <span class="font-medium text-slate-900" aria-hidden="true">{{ item.title }}</span>
+                  <span class="font-mono text-slate-400" aria-hidden="true">{{ item.ref }}</span>
+                </li>
+              {% endfor %}
+            </ol>
+          </li>
+        {% endfor %}
+
+
+      </ol>
+
+    </div>
+  </section>
+
+{% endblock %}

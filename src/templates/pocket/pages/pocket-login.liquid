@@ -1,0 +1,43 @@
+<main {% if data.id !=blank %}id="{{ data.id }}" {% endif %} class="flex min-h-full overflow-hidden pt-16 sm:py-28">
+  <div class="mx-auto flex w-full max-w-2xl flex-col px-4 sm:px-6">
+    <div class="relative mt-12 sm:mt-16">
+      <svg viewBox="0 0 1090 1090" width="1090" height="1090" aria-hidden="true" fill="none" preserveAspectRatio="none"
+        class="absolute -top-7 left-1/2 -z-10 h-[788px] -translate-x-1/2 stroke-gray-300/30 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:-top-9 sm:h-auto">
+        <circle cx="545" cy="545" r="544.5" />
+        <circle cx="545" cy="545" r="480.5" />
+        <circle cx="545" cy="545" r="416.5" />
+        <circle cx="545" cy="545" r="352.5" />
+      </svg>
+      <h1 class="text-center text-2xl font-medium tracking-tight text-zinc-900">{{ data.title }}</h1>
+      <h2 class="mt-3 text-center text-lg text-zinc-600">
+        {% for item in data.subtitle %}
+
+        {% if item.href != blank %}
+
+        <a href="{{ item.href }}" class="transition-colors text-primary hover:text-primary-dark">{{ item.text }}</a>
+
+        {% else %}
+
+        {{ item.text }}
+
+        {% endif %}
+
+        {% endfor %}
+      </h2>
+      <div class="-mx-4 mt-10 flex-auto bg-white py-10 px-4 shadow-2xl shadow-gray-900/10 sm:mx-0 sm:flex-none sm:rounded-3xl sm:p-24">
+        <form>
+          <div class="grid grid-cols-2 gap-6">
+
+            {% for item in data.fields %}
+            {% render "/templates/pocket/components/pocket-fields.liquid", field: item, page: "login" %}
+            {% endfor %}
+
+          </div>
+          <button type="submit"
+            class="mt-8 w-full bg-primary-dark inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors hover:bg-primary text-zinc-100">{{
+            data.submitButtonText }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>

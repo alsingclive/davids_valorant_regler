@@ -1,0 +1,25 @@
+{% block card %}
+
+
+  <article class='group relative flex flex-col items-start'>
+    <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+      {{ data.title }}</h2>
+    {% if data.link %}
+      <a href={{data.link.href}}>{{ data.link.text }}</a>
+    {% endif %}
+    {% if data.time %}
+      {% render '/templates/spotlight/components/date.liquid', data: data %}
+    {% endif %}
+
+    {% for text in data.text %}
+      <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+        {{ text }}
+      </p>
+    {% endfor %}
+    <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+      {% render '/templates/spotlight/components/button-primary.liquid', data: data %}
+    </div>
+
+  </article>
+
+{% endblock %}

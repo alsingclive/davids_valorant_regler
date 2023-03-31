@@ -1,0 +1,29 @@
+{% if field.span == true %}
+
+{% assign span = "col-span-full" %}
+
+{% endif %}
+
+<fieldset class="flex flex-col {{ span }}">
+
+  {% case field.type %}
+
+  {% when "select" %}
+  <label for="{{ page }}-{{ field.name }}" class="mb-2 block text-sm font-semibold text-zinc-900 cursor-pointer">{{ field.label }}</label>
+  <select id="{{ page }}-{{ field.name }}"
+    class="relative block w-full appearance-none rounded-lg border transition-colors border-zinc-200 bg-white py-2 px-2 pr-8 text-gray-900 placeholder:text-zinc-400 focus:border-primary focus:outline-none focus:ring-primary sm:text-sm cursor-pointer">
+
+    {% for option in field.options %}
+    <option>{{ option }}</option>
+    {% endfor %}
+
+  </select>
+
+  {% else %}
+  <label for="{{ page }}-{{ field.name }}" class="mb-2 block text-sm font-semibold text-zinc-900 cursor-pointer">{{ field.label }}</label>
+  <input id="{{ page }}-{{ field.name }}" type="{{ field.type }}" {% if field.required==true %}required{% endif %}
+    class="block w-full appearance-none rounded-lg border transition-colors border-zinc-200 bg-white py-2 px-2 text-gray-900 placeholder:text-zinc-400 focus:border-primary focus:outline-none focus:ring-primary sm:text-sm">
+
+  {% endcase %}
+
+</fieldset>

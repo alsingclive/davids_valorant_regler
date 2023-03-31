@@ -1,0 +1,18 @@
+{% block section-heading %}
+
+  <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:max-w-4xl lg:px-12">
+    <h2 class="inline-flex items-center rounded-full px-4 py-1 text-blue-600 ring-1 ring-inset ring-blue-600" id="{{data.title.id}}">
+      <span class="font-mono text-sm" aria-hidden="true">{{ data.title.ref }}</span>
+      <span class="ml-3 h-3.5 w-px bg-blue-600/20"></span>
+      <span class="ml-3 text-base font-medium tracking-tight">{{ data.title.title }}</span>
+    </h2>
+    <p class="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">{{ data.subtitle }}</p>
+
+    {% for text in data.text %}
+      <p class="mt-4 text-lg tracking-tight text-slate-700">{{ text }}</p>
+    {% endfor %}
+
+  </div>
+
+
+{% endblock %}

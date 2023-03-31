@@ -1,5 +1,5 @@
 <div {% if id !=blank %}id="{{ id }}" {% endif %} class="w-full bg-green-dark">
-  <div class="reveal fade-bottom max-w-screen-2xl mx-auto flex flex-col md:flex-row ">
+  <div class="reveal fade-bottom max-w-screen-2xl mx-auto mt-[90px] flex flex-col md:flex-row ">
     <div class="w-full">
       <div class="flex flex-col p-4 md:p-12">
         <div class="flex flex-col">
@@ -49,13 +49,16 @@
         </div>
 
         </a>
-
+        {% if data.subtitle == "Rang- og performance-regler" %}
+        <a href="/killculator#k"
+          class="justify-center w-[250px] text-center flex rounded-full items-center px-9 py-3 md:mx-2 transition-colors border text-rose-700 border-rose-700 bg-transparent hover:border-black hover:text-black hover:bg-white">
+          Gå til Killculator
+          <i class="material-symbols-outlined pl-3" aria-hidden="true" role="img" data-icon="calculate"></i>
+        </a>
+        {% endif %}
       </div>
 
-      {% if data.subtitle != "Rang- og performance-regler" %}
-      <hr
-        class="block border-1 w-[1200px] h-[3px] max-w-xs my-3 md:my-6 border-transparent bg-red-500 md:border-goldish md:bg-goldish m-auto" />
-      {% endif %}
+
     </div>
 
   </div>

@@ -1,0 +1,501 @@
+{
+  "templateName": "/templates/pages/primer-demo.liquid",
+  "routeTemplate": "/primer-demo",
+  "active": true,
+  "data": {
+    "title": "Salient Template - Demo",
+
+    "header": {
+      "title": "Get lost in the world of art.",
+      "subtitle": "A book and video course that teaches you how to design your own stuff from scratch.",
+      "img": {
+        "alt": "some artwork",
+        "src": "/assets/bg/bg1.jpg"
+      },
+      "quote": {
+        "text": "This method of designing stuff is genius. I wish I had known this method a lot sooner.",
+        "author": "Some woman",
+        "detail": "working at some Job"
+      },
+      "button": [
+        {
+          "type": "solid-blue",
+          "href": "#",
+          "text": "Get a free sample"
+        },
+        {
+          "type": "outline-blue",
+          "href": "#",
+          "text": "Buy the book"
+        }
+      ]
+    },
+    "introduction": {
+      "id": "introduction",
+      "subtitle": "“Some artwork you might know” is a book and video course that teaches you a simple method to designing stuff that anyone can learn.",
+      "text": [
+        "Before I learned how to design stuff myself, I always imagined that they were drawn by hand using the pen tool, some sort of fancy graphics tablet, and hours and hours spent manually fine-tuning bezier curves.",
+        "But it turns out this isn't how great stuff designers work at all.",
+        "In “Some artwok you might know”, you'll learn the systems experts use to create pixel perfect stuff, without relying on a steady hand."
+      ],
+      "list": [
+        "Using boolean operations to combine basic shapes into complex stuff",
+        "How to adapt stuff to different sizes",
+        "Translating stuff from an outline style to a solid style",
+        "Identifying the characteristics that make an stuff set cohesive",
+        "Figma features and keyboard shortcuts to speed up your workflow"
+      ],
+      "conclusion": "By the end of the book, you'll have all the confidence you need to dig in and start creating beautiful stuff that can hold their own against any of the stuff you can find online.",
+      "link": [
+        {
+          "href": "#",
+          "text": "Get two free chapters straight to your inbox →"
+        }
+      ]
+    },
+
+    "navigation": {
+      "id": "navigation",
+      "navigation": [
+        {
+          "href": "#table-content",
+          "text": "Table of contents",
+          "selected": "",
+          "ref": "01",
+          "id": "table-content"
+        },
+        {
+          "href": "#guide-step",
+          "text": "Guide",
+          "selected": "",
+          "ref": "02",
+          "id": "guide-step"
+        },
+        {
+          "href": "#assets",
+          "text": "Resources",
+          "selected": "true",
+          "ref": "03",
+          "id": "assets"
+        },
+        {
+          "href": "#pricing",
+          "text": "Pricing",
+          "selected": "",
+          "ref": "04",
+          "id": "pricing"
+        },
+        {
+          "href": "#author",
+          "text": "Author",
+          "selected": "",
+          "ref": "05",
+          "id": "author"
+        }
+      ]
+    },
+
+    "table-content": {
+      "id": "table-content",
+      "title": {
+        "id": "table-content-title",
+        "ref": "01",
+        "title": "Table of Content"
+      },
+      "subtitle": "Get a look at all of the content covered in the book. Everything you need to know is inside.",
+      "text": [
+        "“Someartwork you might know” is comprised of 240 tightly edited, highly visual pages designed to teach you everything you need to know about icon design with no unnecessary filler."
+      ],
+      "content": [
+        {
+          "title": "Getting started",
+          "list": [
+            {
+              "title": "Getting started",
+              "ref": "1"
+            },
+            {
+              "title": "Intro to Figma",
+              "ref": "15"
+            },
+            {
+              "title": "Setting up your first artboard",
+              "ref": "20"
+            }
+          ]
+        },
+        {
+          "title": "Fundamentals",
+          "list": [
+            {
+              "title": "Strokes and fills",
+              "ref": "21"
+            },
+            {
+              "title": "End points",
+              "ref": "22"
+            },
+            {
+              "title": "Bezier curves",
+              "ref": "26"
+            },
+            {
+              "title": "Designing on a grid",
+              "ref": "31"
+            },
+            {
+              "title": "Setting up your first artboard",
+              "ref": "45"
+            }
+          ]
+        },
+        {
+          "title": "Boolean operations",
+          "list": [
+            {
+              "title": "Combining shapes",
+              "ref": "50"
+            },
+            {
+              "title": "Subtracting shapes",
+              "ref": "57"
+            },
+            {
+              "title": "Intersecting shapes",
+              "ref": "66"
+            },
+            {
+              "title": "Flattening",
+              "ref": "78"
+            }
+          ]
+        },
+        {
+          "title": "Optimizing for production",
+          "list": [
+            {
+              "title": "Preparing for SVG",
+              "ref": "82"
+            },
+            {
+              "title": "Configuring your export settings",
+              "ref": "88"
+            },
+            {
+              "title": "Minifying and removing metadata",
+              "ref": "95"
+            }
+          ]
+        }
+      ],
+      "button": {
+        "text": "See more ↓"
+      }
+    },
+
+    "aside": {
+      "id": "testimonial-client1",
+      "quote": "I didn't know a thing about stuff design until I read this book. Now I can create any stuff I need in no time. Great resource!",
+      "img": {
+        "src": "/assets/pfp/pfp4.jpg",
+        "alt": "pfp4"
+      },
+      "author": {
+        "name": "Some guy",
+        "detail": "working at some Job"
+      }
+    },
+
+    "guide-step": {
+      "id": "guide-step",
+
+      "title": {
+        "id": "guide-step-title",
+        "ref": "02",
+        "title": "Guide step by step"
+      },
+      "subtitle": "Over an hour of high quality, step-by-step video content to sharpen your stuff design workflow.",
+      "text": [
+        "Learn how to design your very first stuffs in a series of screencasts that will teach you everything you need to know to go from beginner to pro in just over an hour."
+      ],
+      "step": [
+        {
+          "ref": "01",
+          "img": {
+            "alt": "bg2",
+            "src": "/assets/bg/bg2.jpg"
+          },
+          "title": "Getting started with Figma",
+          "text": "Get familiar with the Figma UI, the different tools it offers, and the most important features.",
+          "detail": "16:54"
+        },
+        {
+          "ref": "02",
+          "img": {
+            "alt": "bg3",
+            "src": "/assets/bg/bg3.jpg"
+          },
+          "title": "Setting up your artboard",
+          "text": "Learn how to create a new artboard and configure your grid and rulers for designing stuff.",
+          "detail": "9:12"
+        },
+        {
+          "ref": "03",
+          "img": {
+            "alt": "bg2",
+            "src": "/assets/bg/bg2.jpg"
+          },
+          "title": "Designing your first stuff",
+          "text": "Using basic shapes and boolean operations, learn how to design your own stuff from scratch.",
+          "detail": "23:25"
+        },
+        {
+          "ref": "04",
+          "img": {
+            "alt": "bg3",
+            "src": "/assets/bg/bg3.jpg"
+          },
+          "title": "Advanced design techniques",
+          "text": "Learn the techniques you need to know to adapt your original stuff to a modern duotone style.",
+          "detail": "28:44"
+        }
+      ]
+    },
+    "assets": {
+      "id": "assets",
+      "title": {
+        "id": "assets-title",
+        "ref": "03",
+        "title": "Our Resources"
+      },
+      "subtitle": "Tools and resources you can use to get started even faster and progress even further.",
+      "text": [
+        "Design assets, icon teardowns, and a community of fellow icon designers where you can ask questions, get feedback, and accelerate your learning."
+      ],
+      "list": [
+        {
+          "img": {
+            "alt": "bg2",
+            "src": "/assets/bg/bg2.jpg"
+          },
+          "title": "Figma stuff templates",
+          "text": "Pefectly structured templates for quickly designing new stuff at dozens of common sizes."
+        },
+        {
+          "img": {
+            "alt": "bg3",
+            "src": "/assets/bg/bg3.jpg"
+          },
+          "title": "Weekly stuff teardowns",
+          "text": "Weekly videos where we dissect and recreate beautiful stuff we find on the web."
+        },
+        {
+          "img": {
+            "alt": "bg2",
+            "src": "/assets/bg/bg2.jpg"
+          },
+          "title": "Community of icon designers",
+          "text": "A private Software server where you can get help and give feedback on each others' work."
+        }
+      ]
+    },
+
+    "section-input": {
+      "id": "input-1",
+      "title": "Get the free sample chapters",
+      "subtitle": "Get two free chapters straight to your inbox →",
+      "text": [
+        "Enter your email address and I'll send you a sample from the book containing two of my favorite chapters."
+      ],
+      "input": {
+        "type": "email",
+        "placeholder": "janedoe@email.com",
+        "id": "input1-mail",
+        "button": {
+          "type": "solid-white",
+          "text": "Get free chapters",
+          "href": "#"
+        }
+      }
+    },
+    "pricing": {
+      "id": "pricing",
+      "title": {
+        "id": "pricing-title",
+        "ref": "04",
+        "title": "Pricing"
+      },
+      "subtitle": "Pick your package",
+      "text": [
+        "“Some artwork you might know” is available in two different packages so you can pick the one that's right for you"
+      ],
+      "list": [
+        {
+          "type": "",
+          "title": "Essential",
+          "price": "100",
+          "currency": "DKK",
+          "subtitle": "The perfect starting point if you're on a budget.",
+          "button": {
+            "type": "solid-black",
+            "text": "Get started",
+            "href": "#"
+          },
+          "text": [
+            "The 240-page ebook",
+            "Figma icon templates",
+            "Community access"
+          ]
+        },
+        {
+          "type": "primary",
+          "title": "Complete",
+          "price": "1599",
+          "currency": "DKK",
+          "subtitle": "Everything icon resource you could ever ask for.",
+          "button": {
+            "type": "solid-white",
+            "text": "Get started",
+            "href": "#"
+          },
+          "text": [
+            "The 240-page ebook",
+            "Figma icon templates",
+            "Over an hour of screencasts",
+            "Weekly icon teardowns",
+            "Community access"
+          ]
+        }
+      ]
+    },
+    "testimonials": {
+      "id": "testimonials",
+      "title": "Some kind words from early customers...",
+      "text": [
+        "I worked with a small group of early access customers to make sure all of the content in the book was exactly what they needed. Hears what they had to say about the finished product."
+      ],
+      "list": [
+        {
+          "text": "Mira's teaching style is second to none. Everything was easy to follow every step of the way.",
+          "author": "Lorem Doe",
+          "img": {
+            "src": "/assets/pfp/pfp1.jpg",
+            "alt": "pfp"
+          },
+          "detail": "working at some Job"
+        },
+        {
+          "text": "Mira's teaching style is second to none. Everything was easy to follow every step of the way.",
+          "author": "Lorem Doe",
+          "img": {
+            "src": "/assets/pfp/pfp2.jpg",
+            "alt": "pfp"
+          },
+          "detail": "working at some Job"
+        },
+        {
+          "text": "Mira's teaching style is second to none. Everything was easy to follow every step of the way.",
+          "author": "Lorem Doe",
+          "img": {
+            "src": "/assets/pfp/pfp5.jpg",
+            "alt": "pfp"
+          },
+          "detail": "working at some Job"
+        },
+        {
+          "text": "Mira's teaching style is second to none. Everything was easy to follow every step of the way.",
+          "author": "Lorem Doe",
+          "img": {
+            "src": "/assets/pfp/pfp1.jpg",
+            "alt": "pfp"
+          },
+          "detail": "working at some Job"
+        },
+        {
+          "text": "Mira's teaching style is second to none. Everything was easy to follow every step of the way.",
+          "author": "Lorem Doe",
+          "img": {
+            "src": "/assets/pfp/pfp2.jpg",
+            "alt": "pfp"
+          },
+          "detail": "working at some Job"
+        },
+        {
+          "text": "Mira's teaching style is second to none. Everything was easy to follow every step of the way.",
+          "author": "Lorem Doe",
+          "img": {
+            "src": "/assets/pfp/pfp5.jpg",
+            "alt": "pfp"
+          },
+          "detail": "working at some Job"
+        },
+        {
+          "text": "Mira's teaching style is second to none. Everything was easy to follow every step of the way.",
+          "author": "Lorem Doe",
+          "img": {
+            "src": "/assets/pfp/pfp1.jpg",
+            "alt": "pfp"
+          },
+          "detail": "working at some Job"
+        },
+        {
+          "text": "Mira's teaching style is second to none. Everything was easy to follow every step of the way.",
+          "author": "Lorem Doe",
+          "img": {
+            "src": "/assets/pfp/pfp2.jpg",
+            "alt": "pfp"
+          },
+          "detail": "working at some Job"
+        },
+        {
+          "text": "Mira's teaching style is second to none. Everything was easy to follow every step of the way.",
+          "author": "Lorem Doe",
+          "img": {
+            "src": "/assets/pfp/pfp5.jpg",
+            "alt": "pfp"
+          },
+          "detail": "working at some Job"
+        }
+      ],
+      "button": {
+        "text": "Read more testimonials ↓"
+      }
+    },
+    "author": {
+      "id": "author",
+      "img": {
+        "alt": "pfp3",
+        "src": "/assets/pfp/pfp3.jpg"
+      },
+      "title": {
+        "id": "author-title",
+        "ref": "05",
+        "title": "Author"
+      },
+      "subtitle": {
+        "highlight": "Jane Doe",
+        "text": [
+          "Hey there, I'm the author behind 'Some artwork you might know'"
+        ]
+      },
+      "text": [
+        "I've been designing icons professionally for over a decade and have worked with dozens of the biggest brands to create custom sets for their products.",
+        "I'm an accomplished conference speaker, and have been teaching icon design workshops every month for the last three years.",
+        "I've worked with designers of all skill levels and honed my way of teaching to really click for anyone who has the itch to start designing their own icons"
+      ],
+      "link": [
+        {
+          "href": "#",
+          "text": "Follow me twitter"
+        },
+        {
+          "href": "#",
+          "text": "Follow me on Instagram"
+        }
+      ]
+    },
+    "data": {
+      "name": "LogoIpsum, LLC"
+    }
+  }
+}

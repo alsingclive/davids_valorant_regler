@@ -1,0 +1,83 @@
+{% script "/templates/primer/components/testimonials.js", location: "footer", async %}
+
+
+  {% block section-testimonials %}
+
+    <section id="{{data.id}}" class="py-8 sm:py-10 lg:py-16">
+      <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:max-w-4xl lg:px-12 text-center">
+        <h2 class="font-display text-4xl font-bold tracking-tight text-slate-900">{{ data.title }}</h2>
+        {% for text in data.text %}
+          <p class="mt-4 text-lg tracking-tight text-slate-600">{{ text }}</p>
+        {% endfor %}
+
+      </div>
+      <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 px-4 lg:max-w-7xl lg:grid-cols-3 lg:px-8">
+
+        {% for testimonial in data.list limit: 6 %}
+          <li class="">
+            <figure class="rounded-3xl p-8 shadow-md ring-1 ring-slate-900/5">
+              <blockquote>
+                <p class="text-lg tracking-tight text-slate-900">"{{ testimonial.text }}"</p>
+              </blockquote>
+              <figcaption class="mt-6 flex items-center">
+                <div class="overflow-hidden rounded-full bg-slate-50"><img
+                    alt="{{ testimonial.img.alt }}"
+                    src="{{ testimonial.img.src }}"
+                    width="48"
+                    height="48"
+                    decoding="async"
+                    data-nimg="1"
+                    class="h-12 w-12 object-cover"
+                    loading="lazy"
+                    style="color:transparent"></div>
+                <div class="ml-4">
+                  <div class="text-base font-medium leading-6 tracking-tight text-slate-900">{{ testimonial.author }}</div>
+                  <div class="mt-1 text-sm text-slate-600">{{ testimonial.detail }}</div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+
+        {% endfor %}
+
+        {% for testimonial in data.list offset: 6 %}
+
+          <li class="offset-testimonial-item hidden">
+            <figure class="rounded-3xl p-8 shadow-md ring-1 ring-slate-900/5">
+              <blockquote>
+                <p class="text-lg tracking-tight text-slate-900">"{{ testimonial.text }}"</p>
+              </blockquote>
+              <figcaption class="mt-6 flex items-center">
+                <div class="overflow-hidden rounded-full bg-slate-50"><img
+                    alt="{{ testimonial.img.alt }}"
+                    src="{{ testimonial.img.src }}"
+                    width="48"
+                    height="48"
+                    decoding="async"
+                    data-nimg="1"
+                    class="h-12 w-12 object-cover"
+                    loading="lazy"
+                    style="color:transparent"></div>
+                <div class="ml-4">
+                  <div class="text-base font-medium leading-6 tracking-tight text-slate-900">{{ testimonial.author }}</div>
+                  <div class="mt-1 text-sm text-slate-600">{{ testimonial.detail }}</div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        {% endfor %}
+
+
+
+      </ul>
+      <div class="mt-10 flex justify-center">
+
+
+        <div id="testimonials-reveal-button" class="mt-10 flex justify-center">
+          <button type="button" class="flex items-center text-base font-medium tracking-tight text-slate-900 hover:text-slate-700">{{ data.button.text }}
+        </button>
+      </div>
+
+    </div>
+  </section>
+{% endblock %}

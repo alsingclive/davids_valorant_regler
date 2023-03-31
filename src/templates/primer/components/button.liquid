@@ -1,0 +1,27 @@
+{% block button %}
+
+  {% if button.type == "solid-black" %}
+    <button class="inline-flex justify-center rounded-md py-1 px-4 text-base font-semibold tracking-tight shadow-sm focus:outline-none bg-slate-900 text-white hover:bg-slate-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 active:bg-slate-700 active:text-white/80 disabled:opacity-30 disabled:hover:bg-slate-900 my-2">
+      <a href={{button.href}} class="">{{ button.text }}</a>
+    </button>
+  {% elsif button.type == "outline-blue" %}
+    <button class="inline-flex justify-center rounded-md border py-1 px-4 text-base font-semibold tracking-tight focus:outline-none border-blue-300 text-blue-600 hover:border-blue-400 hover:bg-blue-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 active:text-blue-600/70 disabled:opacity-40 disabled:hover:border-blue-300 disabled:hover:bg-transparent my-2">
+      <a href={{button.href}} class="">{{ button.text }}</a>
+    </button>
+  {% elsif button.type == "solid-blue" %}
+    <button class="inline-flex justify-center rounded-md py-1 px-4 text-base font-semibold tracking-tight shadow-sm focus:outline-none bg-blue-600 text-white hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 active:bg-blue-700 active:text-white/80 disabled:opacity-30 disabled:hover:bg-blue-600 my-2">
+      <a href={{button.href}} class="">{{ button.text }}</a>
+    </button>
+  {% elsif button.type == "solid-white" %}
+    <button class="inline-flex justify-center rounded-md py-1 px-4 text-base font-semibold tracking-tight shadow-sm focus:outline-none bg-white text-blue-600 hover:text-blue-700 focus-visible:text-blue-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white active:bg-blue-50 active:text-blue-900/80 disabled:opacity-40 disabled:hover:text-blue-600 my-2">
+      <a href={{button.href}} class="">{{ button.text }}</a>
+    </button>
+  {% else %}
+    <button class="inline-flex justify-centerpy-1 px-4 text-base font-semibold tracking-tight my-2">
+      <a href={{button.href}}>{{ button.text }}</a>
+    </button>
+  {% endif %}
+
+
+
+{% endblock %}

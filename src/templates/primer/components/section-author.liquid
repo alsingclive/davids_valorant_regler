@@ -1,0 +1,74 @@
+{% block section-author %}
+
+
+  <section
+    id="{{data.id}}"
+    aria-labelledby="author-title"
+    class="relative scroll-mt-14 pb-3 pt-8 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16">
+    <div class="absolute inset-x-0 bottom-0 top-1/2 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
+
+      <svg aria-hidden="true" class="absolute inset-0 h-full w-full"><defs><pattern id=":Rem:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="100%"><path d="M0 128V.5H128" fill="none" stroke="currentColor"></path></pattern></defs><rect width="100%" height="100%" fill="url(#:Rem:)"></rect>
+      </svg>
+
+
+    </div>
+    <div
+      class="relative mx-auto max-w-5xl pt-16 sm:px-6">
+      <div
+        class="bg-slate-50 pt-px sm:rounded-3xl">
+        <div
+          class="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72"><img
+            alt="{{data.img.alt}}"
+            sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
+            src="{{data.img.src}}"
+            width="576"
+            height="576"
+            decoding="async"
+            data-nimg="1"
+            class="absolute inset-0 h-full w-full object-cover"
+            loading="lazy"
+            style="color:transparent"></div>
+        <div
+          class="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
+          <h2
+            class="author-title inline-flex items-center rounded-full py-1 px-4 text-blue-600 ring-1 ring-inset ring-blue-600"
+            id="{{data.title.id}}">
+            <span
+              class="font-mono text-sm"
+              aria-hidden="true">{{ data.title.ref }}</span>
+            <span
+              class="ml-3 h-3.5 w-px bg-blue-600/20"></span>
+            <span
+              class="ml-3 text-base font-medium tracking-tight">{{ data.title.title }}</span>
+          </h2>
+          <p
+            class="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+            <span
+              class="block text-blue-600">{{ data.subtitle.highlight }} -</span>
+            {{ data.subtitle.text }}
+            </p>
+
+
+          {% for text in data.text %}
+            <p
+              class="mt-4 text-lg tracking-tight text-slate-700">{{text}}</p>
+          {% endfor %}
+
+          {% for link in data.link %}
+            <p
+              class="mt-8">
+              <a
+                class="inline-flex items-center text-base font-medium tracking-tight text-blue-600"
+                href="{{link.href}}">
+                {{ link.text }}
+              </a>
+            </p>
+          {% endfor %}
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

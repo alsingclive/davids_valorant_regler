@@ -1,0 +1,35 @@
+{% case data.config.align %}
+
+{% when "left" %}
+{% assign itemsAlign = "justify-start" %}
+
+{% when "center" %}
+{% assign itemsAlign = "justify-center" %}
+
+{% when "right" %}
+{% assign itemsAlign = "justify-end" %}
+
+{% endcase %}
+
+{% case data.variant %}
+
+{% when "primary" %}
+{% assign variant = "bg-primary-dark hover:bg-primary text-zinc-100" %}
+
+{% when "secondary" %}
+{% assign variant = "bg-zinc-900 hover:bg-zinc-900-light text-zinc-100" %}
+
+{% when "ghost" %}
+{% assign variant = "bg-transparent outline outline-1 outline-zinc-600 hover:outline-zinc-700 text-zinc-100" %}
+
+{% endcase %}
+
+<a class="inline-flex justify-center rounded-lg py-2 px-3 gap-0.5 overflow-hidden text-sm font-semibold transition-all {% if data.config.span == true %}w-full{% endif %} {{ itemsAlign }} {{ variant }}"
+  href="{{ data.href }}" {% if data.target=="_blank" %}target="_blank" {% endif %}>
+  <span>{{ data.text }}</span>
+
+  {% if data.icon != blank %}
+  <i class="material-symbols-outlined text-xl leading-none {% if data.config.reverse == true %}-order-1{% endif %}" aria-hidden="true" role="img" data-icon="{{ data.icon }}"></i>
+  {% endif %}
+
+</a>

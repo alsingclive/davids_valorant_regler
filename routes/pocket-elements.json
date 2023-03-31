@@ -1,0 +1,382 @@
+{
+  "templateName": "/templates/pages/designer.liquid",
+  "routeTemplate": "/pocket",
+  "active": true,
+  "data": {
+    "title": "Pocket elements",
+    "elements": [
+      {
+        "template": "/templates/pocket/components/pocket-primary-features.liquid",
+        "data": {
+          "id": "features",
+          "title": "Every feature you need to win. Try it for yourself.",
+          "subtitle": "Pocket was built for investors like you who play by their own rules and aren't going to let SEC regulations get in the way of their dreams. If other investing tools are afraid to build it, Pocket has it.",
+          "screenApp": "Pocket",
+          "features": [
+            {
+              "title": "Invite friends for better returns",
+              "description": "For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it's 10 seconds if you invite an insider.",
+              "icon": "group_add",
+              "screen": {
+                "title": "Invite people",
+                "subtitle": [
+                  { "text": "Get tips " },
+                  { "emphasis": "5s sooner" },
+                  { "text": " for every invite." }
+                ],
+                "body": {
+                  "image": "https://placekitten.com/480/360",
+                  "title": "Obi-Wan Catnobi the cat",
+                  "text": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in posuere nisi. Nullam posuere mattis auctor.",
+                    "Mauris pharetra dolor quis mauris ornare dapibus."
+                  ]
+                }
+              }
+            },
+            {
+              "title": "Notifications on stock dips",
+              "description": "Get a push notification every time we find out something that's going to lower the share price on your holdings so you can sell before the information hits the public markets.",
+              "icon": "notifications",
+              "screen": {
+                "title": "Stonks",
+                "subtitle": [
+                  { "text": "March 9, 2022" }
+                ],
+                "body": {
+                  "image": "https://placekitten.com/512/512",
+                  "title": "Isaac Mewton the cat",
+                  "text": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae diam sed lectus feugiat lobortis.",
+                    "Orci varius natoque et montes, nascetur ridiculus mus."
+                  ]
+                }
+              }
+            },
+            {
+              "title": "Invest what you want",
+              "description": "We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.",
+              "icon": "currency_bitcoin",
+              "screen": {
+                "title": "Buy $LA",
+                "subtitle": [
+                  { "emphasis": "$34.28" },
+                  { "text": " per share" }
+                ],
+                "body": {
+                  "image": "https://placekitten.com/400/300",
+                  "title": "Harry Pawter the cat",
+                  "text": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor justo vitae gravida finibus.",
+                    "Aenean hendrerit turpis dui, ac fermentum dolor imperdiet sed."
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "template": "/templates/pocket/components/pocket-banner.liquid",
+        "data": {
+          "id": "install",
+          "title": "Get your first tips today",
+          "text": [
+            "It takes 30 seconds to sign up. Download the app and create an account today and we'll send you a tip guaranteed to double your first investment."
+          ],
+          "link": {
+            "variant": "primary",
+            "text": "Install on iOS",
+            "href": "#",
+            "target": "",
+            "icon": "cloud_download",
+            "config": {
+              "reverse": false,
+              "align": "center",
+              "span": false
+            }
+          }
+        }
+      },
+      {
+        "template": "/templates/pocket/components/pocket-pricing.liquid",
+        "data": {
+          "id": "pricing",
+          "title": "We make money, you make money. Win-win deal.",
+          "subtitle": "Whether you're one person trying to get ahead or a big firm trying to take over the world, we've got a plan for you.",
+          "items": [
+            {
+              "title": "Beginner",
+              "subtitle": "You're new to investing but want to do it right. Get started now.",
+              "icon": "payments",
+              "price": {
+                "monthly": "$5",
+                "annually": "$50"
+              },
+              "link": {
+                "variant": "secondary",
+                "text": "Subscribe",
+                "href": "#",
+                "target": "",
+                "icon": "",
+                "config": {
+                  "reverse": false,
+                  "align": "center",
+                  "span": true
+                }
+              },
+              "features": [
+                {
+                  "icon": "check",
+                  "title": [
+                    { "text": "Commission-free trading" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    {  "text": "Multi-layered encryption" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    { "text": "One tip every " },
+                    { "emphasis": "day" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    { "text": "Invest up to " },
+                    { "emphasis": "$1,500" },
+                    { "text": " each month" }
+                  ]
+                }
+              ],
+              "config": {
+                "featured": false
+              }
+            },
+            {
+              "title": "Advanced",
+              "subtitle": "You've been investing for a while. Invest more and grow your wealth faster.",
+              "icon": "savings",
+              "price": {
+                "monthly": "$25",
+                "annually": "$250"
+              },
+              "link": {
+                "variant": "secondary",
+                "text": "Subscribe",
+                "href": "#",
+                "target": "",
+                "icon": "",
+                "config": {
+                  "reverse": false,
+                  "align": "center",
+                  "span": true
+                }
+              },
+              "features": [
+                {
+                  "icon": "check",
+                  "title": [
+                    { "text": "Commission-free trading" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    { "text": "Multi-layered encryption" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    { "text": "One tip every " },
+                    { "emphasis": "hour" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    { "text": "Invest up to " },
+                    { "emphasis": "$15,000" },
+                    { "text": " each month" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    {  "emphasis": "Basic" },
+                    { "text": " transaction anonymization" }
+                  ]
+                }
+              ],
+              "config": {
+                "featured": false
+              }
+            },
+            {
+              "title": "Elite",
+              "subtitle": "You've got a huge amount of assets but it's not enough. To the moon.",
+              "icon": "account_balance",
+              "price": {
+                "monthly": "$125",
+                "annually": "$1,250"
+              },
+              "link": {
+                "variant": "primary",
+                "text": "Subscribe",
+                "href": "#",
+                "target": "",
+                "icon": "",
+                "config": {
+                  "reverse": false,
+                  "align": "center",
+                  "span": true
+                }
+              },
+              "features": [
+                {
+                  "icon": "check",
+                  "title": [
+                    { "text": "Commission-free trading" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    { "text": "Multi-layered encryption" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    { "emphasis": "Real-time" },
+                    { "text": " tip notifications" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    { "emphasis": "No investment limits" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    { "emphasis": "Advanced" },
+                    { "text": " transaction anonymization" }
+                  ]
+                },
+                {
+                  "icon": "check",
+                  "title": [
+                    { "text": "Automated tax-loss harvesting" }
+                  ]
+                }
+              ],
+              "config": {
+                "featured": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "template": "/templates/pocket/pages/pocket-register.liquid",
+        "data": {
+          "id": "register",
+          "title": "Sign up for an account",
+          "subtitle": [
+            { "text": "Already registered? " },
+            {
+              "text": "Sign in",
+              "href": "#"
+            },
+            { "text": " to your account." }
+          ],
+          "fields": [
+            {
+              "label": "First name",
+              "name": "first-name",
+              "type": "text",
+              "required": true,
+              "span": false
+            },
+            {
+              "label": "Last name",
+              "name": "last-name",
+              "type": "text",
+              "required": true,
+              "span": false
+            },
+            {
+              "label": "Email address",
+              "name": "email",
+              "type": "email",
+              "required": true,
+              "span": true
+            },
+            {
+              "label": "Password",
+              "name": "password",
+              "type": "password",
+              "required": true,
+              "span": true
+            },
+            {
+              "label": "How did you hear about us?",
+              "name": "referral-source",
+              "type": "select",
+              "required": false,
+              "span": true,
+              "options": [
+                "Super Bowl Commercial",
+                "Social media",
+                "Friends and family members",
+                "In the back of my cereal box",
+                "It was revealed to me in a dream"
+              ]
+            }
+          ],
+          "submitButtonText": "Get started today"
+        }
+      },
+      {
+        "template": "/templates/pocket/pages/pocket-login.liquid",
+        "data": {
+          "id": "login",
+          "title": "Sign in to account",
+          "subtitle": [
+            { "text": "Don't have an account? " },
+            {
+              "text": "Sign up",
+              "href": "#"
+            },
+            { "text": " for a free trial." }
+          ],
+          "fields": [
+            {
+              "label": "Email address",
+              "name": "email",
+              "type": "email",
+              "required": true,
+              "span": true
+            },
+            {
+              "label": "Password",
+              "name": "password",
+              "type": "password",
+              "required": true,
+              "span": true
+            }
+          ],
+          "submitButtonText": "Sign in to account"
+        }
+      }
+    ]
+  }
+}

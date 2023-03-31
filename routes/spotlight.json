@@ -1,0 +1,365 @@
+{
+  "templateName": "/templates/pages/spotlight.liquid",
+  "routeTemplate": "/spotlight",
+  "active": true,
+  "data": {
+    "title": "Spotlight Template",
+    "elements": [
+      {
+        "template": "/templates/spotlight/components/header.liquid",
+        "data": {
+          "img": {
+            "src": "/assets/pfp/pfp2.jpg",
+            "alt": "pfp1"
+          },
+          "nav": [
+            { "text": "About", "href": "#" },
+            { "text": "Articles", "href": "#" },
+            { "text": "Projects", "href": "#" },
+            { "text": "Speaking", "href": "#" },
+            { "text": "Uses", "href": "#" }
+          ]
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/date.liquid",
+        "data": {}
+      },
+      {
+        "template": "/templates/spotlight/components/date.liquid",
+        "data": {
+          "date": "27 sep, 2012"
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/button-primary.liquid",
+        "data": {
+          "button": {
+            "text": "Primary Button"
+          }
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/card.liquid",
+        "data": {
+          "title": "A CARD",
+          "date": "27 sep, 2012",
+          "link": {
+            "text": "Some link",
+            "href": "#"
+          },
+          "text": [
+            "This is a card with a link.",
+            "And this is a description, so I describe what the article or section contains."
+          ],
+          "button": {
+            "text": "Read the entire article >"
+          }
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/card-list.liquid",
+        "data": {
+          "id": "card-list",
+          "card": [
+            {
+              "id": "card-1",
+              "title": "First card",
+              "href": "#",
+              "img": {
+                "alt": "logo 1",
+                "src": "/assets/logo/logo1.svg"
+              },
+              "text": [
+                "But for Planetaria we needed to create a brand that would still inspire us 100 years from now.",
+                "When humanity has spread across our entire solar system."
+              ]
+            },
+            {
+              "id": "card-2",
+              "title": "Second card",
+              "href": "#",
+              "img": {
+                "alt": "logo 2",
+                "src": "/assets/logo/logo4.svg"
+              },
+              "text": [
+                "But for Planetaria we needed to create a brand that would still inspire us 100 years from now.",
+                "When humanity has spread across our entire solar system."
+              ]
+            },
+            {
+              "id": "card-1",
+              "title": "First card",
+              "href": "#",
+              "img": {
+                "alt": "logo 1",
+                "src": "/assets/logo/logo1.svg"
+              },
+              "text": [
+                "But for Planetaria we needed to create a brand that would still inspire us 100 years from now.",
+                "When humanity has spread across our entire solar system."
+              ]
+            },
+            {
+              "id": "card-2",
+              "title": "Second card",
+              "href": "#",
+              "img": {
+                "alt": "logo 2",
+                "src": "/assets/logo/logo4.svg"
+              },
+              "text": [
+                "But for Planetaria we needed to create a brand that would still inspire us 100 years from now.",
+                "When humanity has spread across our entire solar system."
+              ]
+            },
+            {
+              "id": "card-1",
+              "title": "First card",
+              "href": "#",
+              "img": {
+                "alt": "logo 1",
+                "src": "/assets/logo/logo1.svg"
+              },
+              "text": [
+                "But for Planetaria we needed to create a brand that would still inspire us 100 years from now.",
+                "When humanity has spread across our entire solar system."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/button-secondary.liquid",
+        "data": {
+          "button": {
+            "text": "Secondary Button"
+          }
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/prose.liquid",
+        "data": {
+          "text": [
+            "Proses are paragraphs.",
+            "Put them in an array.",
+            "And here they go.",
+            "-- Almost a haiku, by Emma"
+          ]
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/section.liquid",
+        "data": {
+          "id": "section-spotlight-template",
+          "title": "This section has an H2",
+          "text": [
+            "Proses are paragraphs.",
+            "Put them in an array.",
+            "And here they go.",
+            "-- Almost a haiku, by Emma"
+          ],
+          "articles": [
+            {
+              "title": "Some clever article name",
+              "author": "LogoIspum",
+              "date": "2021",
+              "text": [
+                "A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
+              ],
+              "link": { "text": "Watch video >", "href": "#" }
+            },
+            {
+              "title": "Some other article name",
+              "author": "LogoIspum",
+              "date": "2022",
+              "text": [
+                "A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
+              ],
+              "link": { "text": "Read the article >", "href": "#" }
+            }
+          ]
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/article-layout.liquid",
+        "data": {
+          "back-arrow-href": "/spotlight",
+          "title": "Article layout here",
+          "date": "27 sep, 2017",
+          "text": [
+            "Most companies try to stay ahead of the curve when it comes to visual design.",
+            "But for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system."
+          ]
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/gallery.liquid",
+        "data": {
+          "id": "gallery1",
+          "gallery": [
+            {
+              "src": "/assets/pfp/pfp1.jpg",
+              "alt": "pfp1"
+            },
+            {
+              "src": "/assets/pfp/pfp2.jpg",
+              "alt": "pfp2"
+            },
+            {
+              "src": "/assets/pfp/pfp3.jpg",
+              "alt": "pfp3"
+            },
+            {
+              "src": "/assets/pfp/pfp4.jpg",
+              "alt": "pfp4"
+            },
+            {
+              "src": "/assets/pfp/pfp5.jpg",
+              "alt": "pfp5"
+            }
+          ]
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/card-input.liquid",
+        "data": {
+          "id": "subscribe",
+          "title": "Stay up to date",
+          "text": ["Get notified when etc etc etc.."],
+          "input": {
+            "type": "email",
+            "placeholder": "mymail@mail.com"
+          },
+
+          "button": {
+            "type": "submit",
+            "text": "Submit"
+          }
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/card-cv.liquid",
+        "data": {
+          "id": "cv",
+          "title": "My CV",
+          "cv": [
+            {
+              "img": {
+                "alt": "logo 1",
+                "src": "/assets/logo/logo1.svg"
+              },
+              "work": "Workplace",
+              "role": "CEO",
+              "start": "2011",
+              "end": "2013"
+            },
+            {
+              "img": {
+                "alt": "logo 2",
+                "src": "/assets/logo/logo2.svg"
+              },
+              "work": "Workplace",
+              "role": "CEO",
+              "start": "2013",
+              "end": "2017"
+            },
+            {
+              "img": {
+                "alt": "logo 3",
+                "src": "/assets/logo/logo3.svg"
+              },
+              "work": "Workplace",
+              "role": "CEO",
+              "start": "2017",
+              "end": "2019"
+            },
+            {
+              "img": {
+                "alt": "logo 4",
+                "src": "/assets/logo/logo4.svg"
+              },
+              "work": "Workplace",
+              "role": "CEO",
+              "start": "2019",
+              "end": "2023"
+            }
+          ],
+          "link": [
+            {
+              "text": "Download my CV",
+              "href": "#"
+            }
+          ]
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/simple-layout.liquid",
+        "data": {
+          "href": "/spotlight",
+          "title": "This is a simple layout",
+          "text": [
+            "Most companies try to stay ahead of the curve when it comes to visual design.",
+            "But for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system."
+          ],
+          "section": [
+            {
+              "id": "section-spotlight",
+              "title": "This section has an H2",
+              "text": [
+                "Proses are paragraphs.",
+                "Put them in an array.",
+                "And here they go.",
+                "-- Almost a haiku, by Emma"
+              ],
+              "articles": [
+                {
+                  "title": "Some clever article name",
+                  "author": "LogoIspum",
+                  "date": "2021",
+                  "text": [
+                    "A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
+                  ],
+                  "link": { "text": "Watch video", "href": "#" }
+                },
+                {
+                  "title": "Some other article name",
+                  "author": "LogoIspum",
+                  "date": "2022",
+                  "text": [
+                    "A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
+                  ],
+                  "link": { "text": "Read the article", "href": "#" }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "template": "/templates/spotlight/components/footer.liquid",
+        "data": {
+          "nav": [
+            {
+              "text": "About",
+              "href": "/spotlight"
+            },
+            {
+              "text": "Projects",
+              "href": "/spotlight"
+            },
+            {
+              "text": "Speaking",
+              "href": "/spotlight"
+            },
+            {
+              "text": "Uses",
+              "href": "/spotlight"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

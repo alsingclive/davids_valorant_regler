@@ -1,0 +1,64 @@
+{% block section-assets %}
+
+  <section
+    id="{{data.id}}"
+    aria-labelledby="{{data.id}}"
+    class="scroll-mt-14 pb-8 pt-16 sm:scroll-mt-32 sm:pb-10 sm:pt-20 lg:pb-16 lg:pt-32">
+    {% render '/templates/primer/components/section-heading.liquid', data: data %}
+    <div class="mx-auto mt-16 max-w-5xl lg:px-6">
+      <div class="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:rounded-3xl md:px-8 md:pt-16 lg:p-20">
+        {% for price in data.list %}
+
+          <div class="relative px-4 py-16 sm:rounded-3xl sm:px-10 md:py-12 lg:px-12 {%if price.type == "primary"%}bg-blue-600 sm:shadow-lg{%endif%}">
+            {% if price.type == "primary" %}
+              <div class="absolute inset-0 text-white/10 [mask-image:linear-gradient(white,transparent)]">
+              
+                <svg aria-hidden="true" class="absolute inset-0 h-full w-full"><defs><pattern id=":R6lm:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="50%"><path d="M0 128V.5H128" fill="none" stroke="currentColor"></path></pattern></defs><rect width="100%" height="100%" fill="url(#:R6lm:)"></rect>
+                </svg>
+
+              </div>
+            {% endif %}
+
+
+
+            <div class="relative flex flex-col">
+              <h3 class="mt-7 text-lg font-semibold tracking-tight text-slate-900 {%if price.type == "primary"%}text-white{%endif%}">{{ price.title }}</h3>
+              <p class="mt-2 text-lg tracking-tight text-slate-600 {%if price.type == "primary"%}text-white{%endif%}">{{ price.subtitle }}</p>
+              <p class="order-first flex font-display font-bold {%if price.type == "primary"%}text-white{%endif%}">
+                <span class="text-[1.75rem] leading-tight text-slate-500 {%if price.type == "primary"%}text-white/70{%endif%}">{{ price.currency }}</span>
+                <span class="ml-1 mt-1 text-7xl tracking-tight text-slate-900 {%if price.type == "primary"%}text-white{%endif%}">{{ price.price }}</span>
+              </p>
+              <div class="order-last mt-8">
+                <ul role="list" class="-my-2 divide-y text-base tracking-tight divide-slate-200 text-slate-900 {%if price.type == "primary"%}text-white divide-white/10{%endif%}">
+
+                  {% for text in price.text %}
+                    <li class="flex py-2">
+                   
+
+                      <svg aria-hidden="true" viewBox="0 0 32 32" class="h-8 w-8 flex-none fill-slate-600 {%if price.type == "primary"%}fill-white{%endif%}"><path d="M11.83 15.795a1 1 0 0 0-1.66 1.114l1.66-1.114Zm9.861-4.072a1 1 0 1 0-1.382-1.446l1.382 1.446ZM14.115 21l-.83.557a1 1 0 0 0 1.784-.258L14.115 21Zm.954.3c1.29-4.11 3.539-6.63 6.622-9.577l-1.382-1.446c-3.152 3.013-5.704 5.82-7.148 10.424l1.908.598Zm-4.9-4.391 3.115 4.648 1.661-1.114-3.114-4.648-1.662 1.114Z"></path>
+                      </svg>
+                     
+
+
+                      <span class="ml-4">{{ text }}</span>
+                    </li>
+
+                  {% endfor %}
+
+
+                </ul>
+              </div>
+              {% render '/templates/primer/components/button.liquid', button: price.button %}
+            </div>
+          </div>
+
+
+
+        {% endfor %}
+
+
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
