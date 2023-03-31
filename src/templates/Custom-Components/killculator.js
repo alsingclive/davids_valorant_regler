@@ -36,9 +36,9 @@ function killculator(k) {
 
     var resultat = g_kills[1] - g_kills[0]
     if (resultat <= 0) {
-        document.getElementById("output").innerHTML = "Du skal have " + (resultat * 2) * -1 + " mindre kills end højeste rank";
+        document.getElementById("output").innerHTML = "Du skal have " + "<span class='font-bold'>" + (resultat * 2) * -1 + "</span>" + " mindre kills end højeste rank";
     } else if (resultat >= 0) {
-        document.getElementById("output").innerHTML = "Du skal have " + resultat * 2 + " flere kills";
+        document.getElementById("output").innerHTML = "Du skal have " + "<span class='font-bold'>" + resultat * 2 + "</span>" + " flere kills";
     }
 
 
