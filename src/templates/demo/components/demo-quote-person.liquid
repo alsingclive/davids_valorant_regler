@@ -16,7 +16,7 @@
 
       <div class="self-center pt-8 md:pt-0 md:px-12 w-full">
         <blockquote class="italic text-xl text-black/80">
-          <i class="material-symbols-outlined text-black/60" data-icon="format_quote"></i>
+          <i class="material-symbols-outlined text-black/0" data-icon="format_quote"></i>
 
           {% if data.quote.first %}
           {% for line in data.quote %}
@@ -25,8 +25,8 @@
           {% else if data.quote != blank %}
           <p>{{ data.quote }}</p>
           {% endif %}
-          <div class="text-right mt-4">
-            <i class="material-symbols-outlined text-black/60 rotate-180" data-icon="format_quote"></i>
+          <div class="text-right mt-4 opacity-100">
+            <i class="material-symbols-outlined text-black/0 rotate-180" data-icon="format_quote"></i>
           </div>
         </blockquote>
         {% if data.author %}
